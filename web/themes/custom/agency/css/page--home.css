@@ -32,17 +32,19 @@
             display: grid;
             grid-template-columns: repeat(3, 2rem);
             justify-content: right;
-            gap: 10px;
+            gap: 0 25px;
             .views-col {
-                width: 100% !important;
+                width: 35.61px !important;
+                height: 41.61px !important;
                 border: 2px solid rgba(51, 27, 59, 0.64);
-                transform: rotate(150.5deg);
+                transform: rotate(30.5deg);
                 border-radius: 50%;
                 .fontawesome-icon {
                     text-align: center;
                     cursor: pointer;
+                    transform: translate(0px, 10.44px);
                     > svg {
-                        transform: rotate(-150.5deg);
+                        transform: rotate(-30.5deg);
                     }
                 }
             }

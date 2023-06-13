@@ -1,8 +1,12 @@
-global-styling:
+global_styling:
   version: VERSION
   css:
     theme:
       css/styles.css: {}
+
+menu_script:
+  js:
+    js/main--menu.js: {}
       
 google-fonts:
   css:

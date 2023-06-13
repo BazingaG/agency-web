@@ -13,6 +13,7 @@ regions:
   footer_left: 'Footer Left'
   footer_right: 'Footer Right'
 libraries:
-  - agency/global-styling
+  - agency/global_styling
   - agency/google-fonts
   - agency/slick_slider
+  - agency/menu_script
