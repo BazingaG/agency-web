@@ -1,0 +1,21 @@
+uuid: 4f86a16a-1189-49f4-aa25-0e53117b630e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comments
+    - paragraphs.paragraphs_type.testcards
+  module:
+    - text
+id: paragraph.testcards.field_comments
+field_name: field_comments
+entity_type: paragraph
+bundle: testcards
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

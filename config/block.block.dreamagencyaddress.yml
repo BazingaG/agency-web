@@ -1,0 +1,25 @@
+uuid: c43d5042-0919-458a-95bc-3c671a153981
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:address:568a7976-b2bd-4c90-9bc1-03ff2497bf1d'
+  module:
+    - block_content
+  theme:
+    - agency
+id: dreamagencyaddress
+theme: agency
+region: footer_right
+weight: -9
+provider: null
+plugin: 'block_content:568a7976-b2bd-4c90-9bc1-03ff2497bf1d'
+settings:
+  id: 'block_content:568a7976-b2bd-4c90-9bc1-03ff2497bf1d'
+  label: 'Dream Agency Address'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

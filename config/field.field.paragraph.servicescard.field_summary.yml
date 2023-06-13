@@ -1,0 +1,21 @@
+uuid: fcea96cb-00bb-4134-bcc9-d221246622f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary
+    - paragraphs.paragraphs_type.servicescard
+  module:
+    - text
+id: paragraph.servicescard.field_summary
+field_name: field_summary
+entity_type: paragraph
+bundle: servicescard
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

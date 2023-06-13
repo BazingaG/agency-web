@@ -1,0 +1,66 @@
+uuid: 755de7a7-1579-4c44-9745-bcd49312c4b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.main_page.field_about_us
+    - field.field.node.main_page.field_banner
+    - field.field.node.main_page.field_recent_work
+    - field.field.node.main_page.field_services
+    - field.field.node.main_page.field_testimonials
+    - node.type.main_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.main_page.default
+targetEntityType: node
+bundle: main_page
+mode: default
+content:
+  field_about_us:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_recent_work:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_services:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_testimonials:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  links: true

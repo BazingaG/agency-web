@@ -1,0 +1,21 @@
+.slick-slider {
+    .slick-prev {
+        position: absolute;
+        left: -7vw;
+        top: 22vh;
+    }
+    .slick-next {
+        position: absolute;
+        left: -4vw;
+        top: 22vh;
+    }
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled {
+        opacity: 0.3;
+    }
+    .slick-list .slick-track {
+        .slick-slide {
+            width: 24vw !important;
+        }
+    }
+}

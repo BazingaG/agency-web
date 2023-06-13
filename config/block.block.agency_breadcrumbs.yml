@@ -1,0 +1,22 @@
+uuid: 85d3d225-25ab-4f62-849e-26b24579fb7c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - agency
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: agency_breadcrumbs
+theme: agency
+region: header_left
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

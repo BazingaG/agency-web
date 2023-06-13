@@ -1,0 +1,36 @@
+uuid: 2f55677e-e90f-4bfc-8c26-40402de8c4dd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - agency
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: agency_site_branding
+theme: agency
+region: header_right
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Dream Agency Header'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

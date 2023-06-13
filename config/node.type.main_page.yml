@@ -1,0 +1,17 @@
+uuid: c52e1139-21de-4513-9915-f49b8ffb7638
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Main page'
+type: main_page
+description: 'Dream Agency - Main page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

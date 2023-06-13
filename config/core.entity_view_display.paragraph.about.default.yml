@@ -1,0 +1,60 @@
+uuid: acb0597b-51b8-4578-8b74-70518998715b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about.field_button
+    - field.field.paragraph.about.field_images
+    - field.field.paragraph.about.field_summary
+    - field.field.paragraph.about.field_title
+    - paragraphs.paragraphs_type.about
+    - responsive_image.styles.wide
+  module:
+    - link
+    - svg_image_responsive
+    - text
+id: paragraph.about.default
+targetEntityType: paragraph
+bundle: about
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_images:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: wide
+      image_link: ''
+      svg_attributes:
+        width: 762
+        height: 717
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

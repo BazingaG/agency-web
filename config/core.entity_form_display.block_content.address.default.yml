@@ -1,0 +1,29 @@
+uuid: 84120b8f-fd05-4005-8fe5-6c5b89bac9c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.address
+    - field.field.block_content.address.field_full_address
+id: block_content.address.default
+targetEntityType: block_content
+bundle: address
+mode: default
+content:
+  field_full_address:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

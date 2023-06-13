@@ -1,0 +1,20 @@
+uuid: 84dd5889-f4b7-486e-9fe3-036b722862af
+langcode: en
+status: false
+dependencies:
+  theme:
+    - agency
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: agency_primary_admin_actions
+theme: agency
+region: header_left
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

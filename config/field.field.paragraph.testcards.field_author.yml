@@ -1,0 +1,21 @@
+uuid: 5dfd98f2-4429-4b55-97b3-4da66523267d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_author
+    - paragraphs.paragraphs_type.testcards
+  module:
+    - text
+id: paragraph.testcards.field_author
+field_name: field_author
+entity_type: paragraph
+bundle: testcards
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

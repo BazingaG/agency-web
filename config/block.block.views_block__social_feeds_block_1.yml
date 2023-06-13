@@ -1,0 +1,24 @@
+uuid: 304351b7-20df-4c8a-a234-5b87d09ad54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_feeds
+  module:
+    - views
+  theme:
+    - agency
+id: views_block__social_feeds_block_1
+theme: agency
+region: header_right
+weight: 0
+provider: null
+plugin: 'views_block:social_feeds-block_1'
+settings:
+  id: 'views_block:social_feeds-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

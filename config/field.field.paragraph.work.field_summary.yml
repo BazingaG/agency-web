@@ -1,0 +1,21 @@
+uuid: 23a88365-23fc-4b1a-9d98-00d577ebceb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary
+    - paragraphs.paragraphs_type.work
+  module:
+    - text
+id: paragraph.work.field_summary
+field_name: field_summary
+entity_type: paragraph
+bundle: work
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

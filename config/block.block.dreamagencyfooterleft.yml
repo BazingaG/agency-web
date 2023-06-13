@@ -1,0 +1,25 @@
+uuid: 64e6ffb6-e971-47dd-b8c9-da22440083d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fc883195-efeb-4044-bb69-4bdd19a55f73'
+  module:
+    - block_content
+  theme:
+    - agency
+id: dreamagencyfooterleft
+theme: agency
+region: footer_left
+weight: -9
+provider: null
+plugin: 'block_content:fc883195-efeb-4044-bb69-4bdd19a55f73'
+settings:
+  id: 'block_content:fc883195-efeb-4044-bb69-4bdd19a55f73'
+  label: 'Dream Agency'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

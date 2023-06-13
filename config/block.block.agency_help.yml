@@ -1,0 +1,22 @@
+uuid: b5435a7b-751d-4da8-a31e-fc30ce75e99e
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - agency
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: agency_help
+theme: agency
+region: header_left
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

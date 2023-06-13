@@ -1,0 +1,34 @@
+uuid: ad313f36-bdbb-49d9-b60b-574cfd792a2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testcards.field_author
+    - field.field.paragraph.testcards.field_comments
+    - paragraphs.paragraphs_type.testcards
+  module:
+    - text
+id: paragraph.testcards.default
+targetEntityType: paragraph
+bundle: testcards
+mode: default
+content:
+  field_author:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_comments:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,24 @@
+uuid: bca8b4f2-1264-425d-8417-2643c53c9d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_feeds.field_social_feeds_icon
+    - taxonomy.vocabulary.social_feeds
+  module:
+    - fontawesome
+id: taxonomy_term.social_feeds.default
+targetEntityType: taxonomy_term
+bundle: social_feeds
+mode: default
+content:
+  field_social_feeds_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true

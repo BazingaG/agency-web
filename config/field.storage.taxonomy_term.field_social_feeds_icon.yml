@@ -1,0 +1,19 @@
+uuid: 75508dcf-0df3-4b37-8e0c-73dba18e8620
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome
+    - taxonomy
+id: taxonomy_term.field_social_feeds_icon
+field_name: field_social_feeds_icon
+entity_type: taxonomy_term
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

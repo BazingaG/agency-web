@@ -1,0 +1,10 @@
+uuid: 1a40c83a-81c4-428d-887c-ffcd3d5c4683
+langcode: en
+status: true
+dependencies: {  }
+id: about
+label: About
+icon_uuid: null
+icon_default: null
+description: 'Dream Agency - About Us section'
+behavior_plugins: {  }

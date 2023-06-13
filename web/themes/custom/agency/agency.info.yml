@@ -1,0 +1,18 @@
+name: Agency
+type: theme
+core_version_requirement: ^9
+description: 'My Agency website theme'
+base theme: false
+regions:
+  header_left: 'Header Left'
+  header_middle: 'Header Middle'
+  header_right: 'Header Right'
+  social: 'Social Bar'
+  hero: 'Hero (full width)'
+  content: Content
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+libraries:
+  - agency/global-styling
+  - agency/google-fonts
+  - agency/slick_slider

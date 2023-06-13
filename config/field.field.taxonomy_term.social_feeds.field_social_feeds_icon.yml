@@ -1,0 +1,21 @@
+uuid: f7ed5c3f-ba68-4642-af26-190ef1016836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_social_feeds_icon
+    - taxonomy.vocabulary.social_feeds
+  module:
+    - fontawesome
+id: taxonomy_term.social_feeds.field_social_feeds_icon
+field_name: field_social_feeds_icon
+entity_type: taxonomy_term
+bundle: social_feeds
+label: 'Social feeds icon'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

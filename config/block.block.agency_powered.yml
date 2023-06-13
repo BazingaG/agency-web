@@ -1,0 +1,22 @@
+uuid: bccab4bd-8a0b-419e-bc6f-25755813250e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - agency
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: agency_powered
+theme: agency
+region: footer_left
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Dream Agency Footer'
+  label_display: '0'
+  provider: system
+visibility: {  }

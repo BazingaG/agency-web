@@ -1,0 +1,10 @@
+uuid: 16eca66b-36d5-4303-81a2-8bbd2fb48505
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+icon_uuid: null
+icon_default: null
+description: 'Dream Agency - Get started section'
+behavior_plugins: {  }

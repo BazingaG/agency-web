@@ -1,0 +1,10 @@
+uuid: cadee2a1-270b-42ce-8b38-ea0623945c18
+langcode: en
+status: true
+dependencies: {  }
+id: work
+label: Work
+icon_uuid: null
+icon_default: null
+description: 'Dream Agency - Our Recent Work section'
+behavior_plugins: {  }

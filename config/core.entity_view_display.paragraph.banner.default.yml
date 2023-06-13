@@ -1,0 +1,60 @@
+uuid: 39e6dc53-28e0-4af0-acf9-fd723cc4acf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_button
+    - field.field.paragraph.banner.field_images
+    - field.field.paragraph.banner.field_summary
+    - field.field.paragraph.banner.field_title
+    - paragraphs.paragraphs_type.banner
+    - responsive_image.styles.wide
+  module:
+    - link
+    - svg_image_responsive
+    - text
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_images:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: wide
+      image_link: ''
+      svg_attributes:
+        width: 871
+        height: 617
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

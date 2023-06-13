@@ -1,0 +1,49 @@
+uuid: 6f74c6a1-46b7-4a31-9680-9c5fffa404cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_us
+    - node.type.main_page
+    - paragraphs.paragraphs_type.about
+  module:
+    - entity_reference_revisions
+id: node.main_page.field_about_us
+field_name: field_about_us
+entity_type: node
+bundle: main_page
+label: 'About Us'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about: about
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 8
+        enabled: true
+      banner:
+        weight: 9
+        enabled: false
+      services:
+        weight: 10
+        enabled: false
+      servicescard:
+        weight: 11
+        enabled: false
+      testcards:
+        weight: 12
+        enabled: false
+      testimonials:
+        weight: 13
+        enabled: false
+      work:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

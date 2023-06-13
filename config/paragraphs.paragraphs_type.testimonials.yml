@@ -1,0 +1,10 @@
+uuid: 251f8d3f-1fc9-4dbf-bc0b-8ba30b2c067d
+langcode: en
+status: true
+dependencies: {  }
+id: testimonials
+label: Testimonials
+icon_uuid: null
+icon_default: null
+description: 'Dream Agency - Testimonials section'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: ce5df7dc-63c4-43d3-81ec-a762a24fe00b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - agency
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: agency_secondary_local_tasks
+theme: agency
+region: header_left
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

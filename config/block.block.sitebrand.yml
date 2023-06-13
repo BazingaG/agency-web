@@ -1,0 +1,25 @@
+uuid: 00d80579-9ae2-46ac-9b59-703fbfbc7eb6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29fdaa4f-2842-495e-b2d5-d0036eb5ed1c'
+  module:
+    - block_content
+  theme:
+    - agency
+id: sitebrand
+theme: agency
+region: header_middle
+weight: 0
+provider: null
+plugin: 'block_content:29fdaa4f-2842-495e-b2d5-d0036eb5ed1c'
+settings:
+  id: 'block_content:29fdaa4f-2842-495e-b2d5-d0036eb5ed1c'
+  label: 'Site brand'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

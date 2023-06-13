@@ -1,0 +1,30 @@
+uuid: 63e96bef-23f9-4275-8b03-b511f9d346e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testcards.field_author
+    - field.field.paragraph.testcards.field_comments
+    - paragraphs.paragraphs_type.testcards
+  module:
+    - text
+id: paragraph.testcards.default
+targetEntityType: paragraph
+bundle: testcards
+mode: default
+content:
+  field_author:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_comments:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
