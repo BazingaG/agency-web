@@ -2,6 +2,9 @@
     padding-top: 25px;
     position: relative;
     overflow: hidden;
+    .agency-content div[data-drupal-messages] {
+        display: none;
+    }
 }
 .agency-page img {
     position: absolute;

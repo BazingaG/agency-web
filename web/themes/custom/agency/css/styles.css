@@ -6,6 +6,10 @@
 @import "node--view--frontpage.css";
 @import "field--paragraph--field-cards--services.css";
 
+body {
+    margin: 0;
+}
+
 /*---MAIN PAGE---*/
 article h2 {
     display: none;
@@ -216,6 +220,57 @@ article h2 {
         .hyphen img{
             width: 2%;
             padding-bottom: 1%;
+        }
+    }
+}
+
+/*---FOOTER COMPONENT---*/
+#block-webform {
+    > h2 {
+        font-family: 'Hind Vadodara';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 159.3%;
+        /* or 25px */
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+    .webform-flex--1 {
+        #edit-email {
+            width: 100%;
+            padding: 17px;
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            color: #FFF;
+        }
+        #edit-email:focus-visible {
+            outline: 0;
+        }
+        #edit-email::placeholder {
+            font-family: 'Hind Vadodara';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 159.3%;
+            /* or 25px */
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        #edit-actions-01-submit {
+            width: 143px;
+            height: 52px;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            text-transform: uppercase;
+            font-family: 'Hind Vadodara';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 159.3%;
+            /* or 25px */
+            letter-spacing: 0.02em;
         }
     }
 }
