@@ -51,6 +51,8 @@ article h2 {
     > div:nth-child(4) {
         grid-column: 2/3;
         grid-row: 1/4;
+        background-image: url('../images/Vector 3.svg'), url('../images/Ellipse 11.svg');
+        background-repeat: no-repeat;
         > div:first-child img{
             z-index: 2;
         }
@@ -80,10 +82,7 @@ article h2 {
         width: 100vw;
     }
     > div:nth-child(2) {
-        width: 100%;
         margin-left: 20vw;
-        display: flex;
-        gap: 50px;
     }
 }
 .paragraph--type--servicescard {

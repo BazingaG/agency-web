@@ -3,6 +3,7 @@
     gap: 50px;
     > div {
         padding-bottom: 7vh;
+        width: 100vw;
     }
     > div:nth-child(2) {
         background-image: url("../images/Ellipse 13.svg") no-repeat;
