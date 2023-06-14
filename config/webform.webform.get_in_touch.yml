@@ -13,16 +13,17 @@ title: 'Get in touch'
 description: ''
 category: ''
 elements: |-
-  get_in_touch:
-    '#type': email
-    '#title': 'Get in touch'
-    '#pattern': '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'
-  actions:
-    '#type': webform_actions
-    '#title': 'Submit button(s)'
-    '#submit__label': SEND
-    '#submit__attributes':
-      style: 'background: #FFFFFF; border: 1px solid #FFFFFF;'
+  flexbox:
+    '#type': webform_flexbox
+    email:
+      '#type': email
+      '#title': Email
+      '#title_display': none
+      '#placeholder': 'Enter your email'
+    actions_01:
+      '#type': webform_actions
+      '#title': Submit
+      '#submit__label': Send
 css: ''
 javascript: ''
 settings:

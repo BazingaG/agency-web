@@ -44,7 +44,6 @@ web/sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
-.ddev/
 .gitattributes/
 .editorconfig/
 web/web.config

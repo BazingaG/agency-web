@@ -1,9 +1,9 @@
-uuid: 05ae8412-6051-435c-bcc3-86de0a3bb403
+uuid: d28565db-6da9-4d5d-a5a3-22d8eb124e9c
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.contact
+    - webform.webform.get_in_touch
   module:
     - webform
   theme:
@@ -11,15 +11,15 @@ dependencies:
 id: webform
 theme: agency
 region: footer_left
-weight: -8
+weight: 0
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: Webform
+  label: 'Get in touch'
   label_display: visible
   provider: webform
-  webform_id: contact
+  webform_id: get_in_touch
   default_data: ''
   redirect: false
 visibility: {  }
