@@ -16,12 +16,10 @@ var paths = {
     dest: base_path+'/js'
   },
   html: {
-    src: base_path+'/lib/templates/*.twig',
-    dest: base_path+'/templates'
+    src: base_path+'/templates/*.html.twig'
   },
   img: {
-    src: base_path+'/lib/images/*{.svg,.png}',
-    dest: base_path+'/images'
+    src: base_path+'/images/*{.svg,.png}'
   }
 }
 
@@ -38,31 +36,20 @@ function scripts() {
       .pipe(gulp.dest(paths.js.dest));
 }
 
-function html () {
-  return gulp
-    .src(paths.html.src)
-    .pipe(gulp.dest(paths.html.dest));
-};
-
-function images() {
-  return gulp
-    .src(paths.img.src)
-    .pipe(gulp.dest(paths.img.dest));
-}
-
 function reload(done) {
   browserSync.reload();
   done();
 }
 
-function clean() {
+function clean(done) {
   (async() => {
-    const deleteFiles = await del([paths.css.dest, paths.html.dest, paths.js.dest, paths.img.dest]);
+    const deleteFiles = await del([paths.css.dest, paths.js.dest]);
     console.log('Deleted files:\n', deleteFiles.join('\n'));
   })();
+  done();
 }
 
-function watch(done) {
+function watch() {
   browserSync.init({
     injectChanges: true,
     open: false,
@@ -73,12 +60,11 @@ function watch(done) {
     files: [paths.css.src, paths.js.src, paths.html.src]
   });
 
-  gulp.watch(paths.html.src, gulp.series(html, reload));
   gulp.watch([paths.css.src, paths.js.src], gulp.series(styles, scripts, reload));
-  done();
+  gulp.watch(paths.html.src, reload);
 }
 
 exports.watch = watch;
-var build = gulp.parallel(clean, styles, scripts, html, images, watch);
+var build = gulp.parallel(clean, styles, scripts);
 
 exports.default = build;
