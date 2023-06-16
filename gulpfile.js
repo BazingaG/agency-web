@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass')(require('node-sass'));
 sass.compiler = require('node-sass');
 var browserSync = require('browser-sync').create();
+const del = require('del');
 
 var base_path = './web/themes/custom/agency';
 var paths = {
@@ -54,6 +55,13 @@ function reload(done) {
   done();
 }
 
+function clean() {
+  (async() => {
+    const deleteFiles = await del([paths.css.dest, paths.html.dest, paths.js.dest, paths.img.dest]);
+    console.log('Deleted files:\n', deleteFiles.join('\n'));
+  })();
+}
+
 function watch(done) {
   browserSync.init({
     injectChanges: true,
@@ -71,6 +79,6 @@ function watch(done) {
 }
 
 exports.watch = watch;
-var build = gulp.parallel(styles, scripts, html, images, watch);
+var build = gulp.parallel(clean, styles, scripts, html, images, watch);
 
 exports.default = build;
