@@ -1,15 +1,1 @@
-.components {
-    display: grid;
-    gap: 50px;
-    > div {
-        padding-bottom: 7vh;
-        width: 100vw;
-    }
-    > div:nth-child(2) {
-        background-image: url("../images/Ellipse 13.svg") no-repeat;
-        background-repeat: no-repeat;
-        background-size: 25%;
-        background-position-x: right;
-        background-position-y: bottom;
-    }
-}
+.components{display:grid;gap:50px}.components>div{padding-bottom:7vh;width:100vw}.components>div:nth-child(2){background-image:url("../images/Ellipse 13.svg") no-repeat;background-repeat:no-repeat;background-size:25%;background-position-x:right;background-position-y:bottom}

@@ -1,0 +1,26 @@
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    padding: 0;
+    .nav-item {
+        display: grid;
+        justify-content: center;
+        .nav-link {
+            font-family: 'Hind Vadodara';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            letter-spacing: 0.01em;
+            color: #331B3B;
+            text-decoration: none;
+        }
+        .nav-link.active {
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, #FDC221 50%, transparent 50%) 100% 1;
+            font-weight: 600;
+        }
+    }
+}

@@ -53,10 +53,7 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }}>
-        <span class="hyphen"><img src="themes/custom/agency/lib/images/Vector 13.png"></span>
-        {{ item.content }}
-    </div>
+      <div{{ attributes.addClass('agency-block-16') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}

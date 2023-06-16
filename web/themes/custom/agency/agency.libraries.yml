@@ -3,10 +3,8 @@ global_styling:
   css:
     theme:
       css/styles.css: {}
-
-menu_script:
   js:
-    js/main--menu.js: {}
+    js/main.js: {}
       
 google-fonts:
   css:
