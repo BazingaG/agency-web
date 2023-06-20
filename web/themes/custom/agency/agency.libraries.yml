@@ -3,8 +3,6 @@ global_styling:
   css:
     theme:
       css/styles.css: {}
-  js:
-    js/main.js: {}
       
 google-fonts:
   css:
