@@ -29,6 +29,14 @@ $line-height-42px: 2.625rem;
 $letter-spacing-01em: 0.01em;
 $letter-spacing-02em: 0.02em;
 
+/*---HAMBURGER---*/
+$bar-width: 2rem;
+$bar-height: 0.3rem;
+$bar-gap: 0.2rem;
+$hamburger-margin: 8px;
+$hamburger-height: calc(#{$bar-height} * 3 + #{$bar-gap} * 2);
+$x-width: calc(#{$hamburger-height} * 1.41421356237);
+
 body {
     margin: 0;
 }
@@ -75,6 +83,7 @@ article h2 {
     > div:first-child {
         grid-column: 1/2;
         grid-row: 1/2;
+        position: relative;
     }
     > div:nth-child(2) {
         grid-column: 2/3;
@@ -134,6 +143,74 @@ article h2 {
         }
     }
 }
+.hamburger-menu {
+    display: none;
+}
+
+@media (min-width: 961px) and (max-width: 1024px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: $bar-gap;
+        width: max-content;
+        z-index: 2;
+        cursor: pointer;
+        position: absolute;
+    }
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        width: $bar-width;
+        height: $bar-height;
+        background-color: #333;
+        border-radius: 1rem;
+        transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, transition 200ms ease-in-out;
+        transform-origin: left center;
+    }
+    .hamburger-menu input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+    .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: $x-width;
+        translate: 0 calc(#{$bar-height} / -2);
+    }
+    .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: $x-width;
+        translate: 0 calc(#{$bar-height} / 2);
+    }
+    .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: #EEE;
+        transition: translate 200ms ease-in-out;
+        translate: -200%;
+        margin-top: calc(#{$hamburger-height} + #{$hamburger-margin});
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        .nav-item {
+            padding: 1rem;
+            .nav-link{ 
+                color: $heading-text-color;
+            }
+        }
+    }
+    .hamburger-menu:has(input:checked) + .nav-bar {
+        translate: 0;
+    }
+}
+
 .agency-header-24 {
     font-family: 'Playfair Display';
     font-size: $font-size-24px;
@@ -149,31 +226,29 @@ article h2 {
 .paragraph--type--banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 0 50px 50px;
+    padding: 6.1050061050061vh 0 6.1050061050061vh 3.307vw;
+    column-gap: 6.944vw;
     > div:first-child {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding-bottom: 30px;
     }
     > div:nth-child(2) {
         grid-column: 1/2;
         grid-row: 2/3;
-        padding-bottom: 30px;
     }
     > div:nth-child(3) {
         grid-column: 1/2;
         grid-row: 3/4;
 
-        background: #331B3B;
-        border-radius: 10px;
-        width: fit-content;
-        padding: 22px 49px;
-
         & a {
+            background: #331B3B;
+            border-radius: 0.661vw;
+            width: fit-content;
+            padding:  2.6862026862027vh 3.241vw;
             font-family: 'Hind Vadodara';
             font-style: normal;
             font-weight: 700;
-            font-size: 17px;
+            font-size: 1.063rem;
             line-height: 137.3%;
             /* or 23px */
             letter-spacing: 0.02em;
@@ -187,18 +262,23 @@ article h2 {
         grid-row: 1/4;
         background-image: url('../images/Vector 3.svg'), url('../images/Ellipse 11.svg');
         background-repeat: no-repeat;
+        height: 79.365079365079vh;
+        background-position: center, left;
+        display: grid;
+        align-items: center;
+        justify-content: center;
         > div:first-child img{
             z-index: 2;
         }
-        > div:nth-child(2) img{
-            z-index: 1;
-            right: 10vw;
-            top: -3vw;
-        }
-        > div:nth-child(3) img{
-            z-index: 0;
-            right: 10vw;
-            top: 3vw;
+    }
+}
+
+@media (min-width:961px) and (max-width:1024px) {
+    .paragraph--type--banner {
+        grid-template-columns: 1fr;
+        gap: 6.1050061050061vh;
+        > div:nth-child(4) {
+            display: none;
         }
     }
 }
