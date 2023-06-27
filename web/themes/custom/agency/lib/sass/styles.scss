@@ -118,20 +118,37 @@ article h2 {
         }
     }
 }
-@media screen and (min-width: 961px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .agency-header {
         > div:nth-child(3) {
             .views-row {
                 .views-col {
-                    height: 3.0573870573871vh !important;
-                    .fontawesome-icon {
-                        transform: translate(0, 0.5rem);
-                    }
+                    width: 5.599vw !important;
+                    height: 4.78515625vh !important;
                 }
             }
         }
     }
+    .agency-header>div:nth-child(3) .views-row {
+        gap: 0 3.5vw;
+    }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .agency-header {
+        > div:nth-child(3) {
+            .views-row {
+                .views-col {
+                    width: 4.203vw !important;
+                    height: 4.6.3802083333333vh !important;
+                }
+            }
+        }
+    }
+    .agency-header>div:nth-child(3) .views-row {
+        gap: 0 2.5vw;
+    }
+}
+
 .nav-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -161,7 +178,7 @@ article h2 {
     display: none;
 }
 
-@media screen and (min-width: 961px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -252,12 +269,13 @@ article h2 {
     > div:nth-child(3) {
         grid-column: 1/2;
         grid-row: 3/4;
+        background: #331B3B;
+        border-radius: 0.661vw;
+        width: fit-content;
+        padding:  2.6862026862027vh 3.241vw;
+        height: fit-content;
 
         & a {
-            background: #331B3B;
-            border-radius: 0.661vw;
-            width: fit-content;
-            padding:  2.6862026862027vh 3.241vw;
             font-family: 'Hind Vadodara';
             font-style: normal;
             font-weight: 700;
@@ -286,11 +304,14 @@ article h2 {
     }
 }
 
-@media screen and (min-width:961px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
     .paragraph--type--banner {
         display: flex;
         flex-direction: column;
         gap: 6.1050061050061vh;
+    }
+    .paragraph--type--banner>div:nth-child(4) {
+        height: 83.365079vh;
     }
 }
 
@@ -358,24 +379,61 @@ article h2 {
         }
     }
 }
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+    .slick-slider .slick-list .slick-track {
+        gap: 15.712vw;
+    }
+    .paragraph--type--servicescard {
+        width: 35vw;
+    }
+    .slick-slider .slick-prev {
+        left: -9vw;
+        top: 26vw;
+    }
+    .slick-slider .slick-next {
+        top: 26vw;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .slick-slider .slick-list .slick-track {
+        gap: 16.712vw;
+    }
+    .paragraph--type--servicescard {
+        width: 35vw;
+    }
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next {
+        top: 16vw;
+    }
+    .slick-slider .slick-prev {
+        left: -8vw;
+    }
+}
+
 /*---ABOUT COMPONENT---*/
 .paragraph--type--about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 6.1050061050061vh 3.307vw;
+    column-gap: 6.944vw;
     > div:nth-child(4) {
         grid-column: 1/2;
         grid-row: 1/4;
         background-image: url("../images/Vector 9.svg"), url("../images/Ellipse 16.svg");
         background-repeat: no-repeat;
         background-size: 717.5px, 604px;
-        // background-position-x: center, center left;
         background-position-y: center, center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
         > div {
             position: relative;
         }
-        > div:first-child img{
+        > div:first-child img {
             z-index: 2;
+            width: 47.950vw;
+            height: 88.522588522589vh;
+            object-fit: none;
         }
     }
     > div:first-child {
@@ -389,12 +447,13 @@ article h2 {
     > div:nth-child(3) {
         grid-column: 2/3;
         grid-row: 3/4;
+        background: #331B3B;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 22px 49px;
+        height: fit-content;
 
         & a {
-            background: #331B3B;
-            border-radius: 10px;
-            width: fit-content;
-            padding: 22px 49px;
             font-family: 'Hind Vadodara';
             font-style: normal;
             font-weight: 700;
@@ -408,11 +467,28 @@ article h2 {
         }
     }
 }
-@media (min-width:961px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
     .paragraph--type--about {
         display: flex;
         flex-direction: column;
         gap: 6.1050061050061vh;
+        > div:nth-child(4) {
+            > div:first-child img {
+                width: 100vw;
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .paragraph--type--about {
+        display: flex;
+        flex-direction: column;
+        gap: 6.1050061050061vh;
+        > div:nth-child(4) {
+            > div:first-child img {
+                width: 100vw;
+            }
+        }
     }
 }
 /*---WORK COMPONENT---*/
@@ -462,7 +538,7 @@ article h2 {
         }
     }
 }
-@media (min-width:961px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
     .paragraph--type--testimonials {
         > div:nth-child(2) {
             display: flex;
@@ -552,18 +628,28 @@ article h2 {
     background-position-y: 6vh;
     background-size: 100%;
 }
-@media (min-width:961px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
     .highlight {
-        background-position-y: 4.5vh;
+        background-position-y: 5vh;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .highlight {
+        background-position-y: 6.5vh;
     }
 }
 .highlight-bold {
     background-position-y: 10vh;
     background-size: 100%;
 }
-@media (min-width:961px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
     .highlight-bold {
-        background-position-y: 8.5vh;
+        background-position-y: 8vh;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .highlight-bold {
+        background-position-y: 11vh;
     }
 }
 .agency-block-16 {
