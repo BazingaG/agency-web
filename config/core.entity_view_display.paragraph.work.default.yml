@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.work.field_summary
     - field.field.paragraph.work.field_title
+    - field.field.paragraph.work.field_workcards
     - paragraphs.paragraphs_type.work
   module:
+    - entity_reference_revisions
     - text
 id: paragraph.work.default
 targetEntityType: paragraph
@@ -26,5 +28,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_workcards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

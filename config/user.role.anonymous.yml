@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - paragraphs_type_permissions
     - search
     - system
 _core:
@@ -24,3 +25,11 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view paragraph content about'
+  - 'view paragraph content banner'
+  - 'view paragraph content services'
+  - 'view paragraph content servicescard'
+  - 'view paragraph content testcards'
+  - 'view paragraph content testimonials'
+  - 'view paragraph content work'
+  - 'view paragraph content workcard'

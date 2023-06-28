@@ -1,0 +1,31 @@
+uuid: eb4519a1-7393-48d8-adff-3319344538ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_right
+    - media.type.image
+    - media.type.svg_type
+    - paragraphs.paragraphs_type.workcard
+id: paragraph.workcard.field_image_right
+field_name: field_image_right
+entity_type: paragraph
+bundle: workcard
+label: 'Image Right'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_type: svg_type
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

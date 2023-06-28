@@ -1,0 +1,10 @@
+uuid: b4d10c1e-4d39-40bc-a9b2-12a9e2a34ab6
+langcode: en
+status: true
+dependencies: {  }
+id: workcard
+label: WorkCard
+icon_uuid: null
+icon_default: null
+description: 'Dream Agency - Recent work cards'
+behavior_plugins: {  }

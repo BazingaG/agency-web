@@ -1,0 +1,52 @@
+uuid: eb37fbf7-1e6f-4393-a158-c09c997fad12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.workcard.field_button
+    - field.field.paragraph.workcard.field_image_left
+    - field.field.paragraph.workcard.field_image_right
+    - field.field.paragraph.workcard.field_title
+    - paragraphs.paragraphs_type.workcard
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.workcard.default
+targetEntityType: paragraph
+bundle: workcard
+mode: default
+content:
+  field_button:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image_left:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image_right:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
