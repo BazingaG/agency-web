@@ -18,13 +18,15 @@
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2,
+                            wipeToSlide: true
                         }
                     },
                     {
-                        breakpoint: 768,
+                        breakpoint: 769,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 1,
                             slidesToScroll: 1,
+                            wipeToSlide: true
                         }
                     }
                 ]
