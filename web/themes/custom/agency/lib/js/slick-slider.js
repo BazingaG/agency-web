@@ -2,8 +2,8 @@
     Drupal.behaviors.slick_slider = {
         attach: function (context, settings) {
             $('.slick-slider').slick({
-                prevArrow: '<div class="slick-prev"><i class="fa fa-circle-chevron-left fa-xl" aria-hidden="true"></i></div>',
-                nextArrow: '<div class="slick-next"><i class="fa fa-circle-chevron-right fa-xl" aria-hidden="true"></i></div>',
+                prevArrow: '<div class="slick-prev"><i class="fa fa-circle-chevron-left fa-2xl" aria-hidden="true"></i></div>',
+                nextArrow: '<div class="slick-next"><i class="fa fa-circle-chevron-right fa-2xl" aria-hidden="true"></i></div>',
                 dots: false,
                 infinite: false,
                 speed: 300,
@@ -18,7 +18,7 @@
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2,
-                            wipeToSlide: true
+                            swipeToSlide: true
                         }
                     },
                     {
@@ -26,7 +26,7 @@
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            wipeToSlide: true
+                            swipeToSlide: true
                         }
                     }
                 ]

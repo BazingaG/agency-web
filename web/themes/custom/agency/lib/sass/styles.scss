@@ -319,7 +319,7 @@ article h2 {
 .paragraph--type--services {
     display: grid;
     background: #ECF7FF;
-    border-radius: 0px 26.455vw 0px 0px;
+    border-radius: 0 26.455vw 0 0;
     padding: 11.233211233211vh 0;
     width: 90vw;
     > div:first-child {
@@ -334,16 +334,19 @@ article h2 {
         .slick-prev {
             position: absolute;
             left: -7vw;
-            top: 22vh;
+            top: 21vh;
+            cursor: pointer;
         }
         .slick-next {
             position: absolute;
             left: -4vw;
-            top: 22vh;
+            top: 21vh;
+            cursor: pointer;
         }
         .slick-prev.slick-disabled,
         .slick-next.slick-disabled {
             opacity: 0.3;
+            cursor: default;
         }
         .slick-list .slick-track {
             display: flex;
@@ -358,7 +361,7 @@ article h2 {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     background: #FFFFFF;
-    box-shadow: 0px 0px 0.595vw 0.132vw rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0.595vw 0.132vw rgba(0, 0, 0, 0.05);
     border-radius: 0.661vw;
     padding: 1.323vw;
     height: 20vh;
@@ -366,7 +369,7 @@ article h2 {
     & img[alt~="code"],
     & img[alt~="mobile"] {
         border-radius: 0.661vw;
-        padding: 7px;
+        padding: 0.438rem;
         left: 0;
     }
     & img[alt~="globe"] {
@@ -388,11 +391,12 @@ article h2 {
         width: 35vw;
     }
     .paragraph--type--services .slick-slider .slick-prev {
-        left: -9vw;
+        left: -11vw;
         top: 26vw;
     }
     .paragraph--type--services .slick-slider .slick-next {
         top: 26vw;
+        left: -5vw;
     }
 }
 @media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
@@ -404,10 +408,13 @@ article h2 {
     }
     .paragraph--type--services .slick-slider .slick-prev,
     .paragraph--type--services .slick-slider .slick-next {
-        top: 16vw;
+        top: 15vw;
     }
     .paragraph--type--services .slick-slider .slick-prev {
-        left: -8vw;
+        left: -10vw;
+    }
+    .paragraph--type--services .slick-slider .slick-next {
+        left: -5vw;
     }
 }
 
@@ -422,7 +429,6 @@ article h2 {
         grid-row: 1/4;
         background-image: url("../images/Vector 9.svg"), url("../images/Ellipse 16.svg");
         background-repeat: no-repeat;
-        background-size: 717.5px, 604px;
         background-position-y: center, center;
         display: grid;
         justify-content: center;
@@ -449,16 +455,16 @@ article h2 {
         grid-column: 2/3;
         grid-row: 3/4;
         background: #331B3B;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         width: fit-content;
-        padding: 22px 49px;
+        padding: 2.6862026862027vh 3.241vw;
         height: fit-content;
 
         & a {
             font-family: 'Hind Vadodara';
             font-style: normal;
             font-weight: 700;
-            font-size: 17px;
+            font-size: 1.063rem;
             line-height: 137.3%;
             /* or 23px */
             letter-spacing: 0.02em;
@@ -518,22 +524,23 @@ article h2 {
         grid-row: 2/3;
         grid-column: 1/3;
         margin-right: 13.5vw;
-        column-gap: 43px;
+        column-gap: 2.844vw;
+        margin-bottom: 4.1514041514042vh;
     }
     .paragraph--type--workcard {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        border-radius: 10px;
+        border-radius: 0.625rem;
         background: #FFF;
-        box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
-        padding: 10px;
+        box-shadow: 0 0 0.563rem 0.125rem rgba(0, 0, 0, 0.05);
+        padding: 0.625rem;
         width: min-content;
-        margin-top: 89px;
-        column-gap: 11px;
+        margin-top: 10.866910866911vh;
+        column-gap: 0.728vw;
         > div:first-child {
             grid-row: 2/3;
             grid-column: 1/2;
-            padding: 30px 0 30px 20px;
+            padding: 3.6630036630037vh 0 3.6630036630037vh 1.323vw;
         }
         > div:nth-child(2) {
             grid-row: 1/2;
@@ -556,31 +563,34 @@ article h2 {
                 font-weight: 500;
                 line-height: 146.3%;
                 text-decoration: none;
-                border-radius: 100px;
-                border: 1px solid #343434;
-                padding: 2px 12px;
+                border-radius: 6.25rem;
+                border: 0.063rem solid #343434;
+                padding: 0.24420024420024vh 0.794vw;
             }
         }
     }
     .slick-slider {
         .slick-prev {
             position: absolute;
-            left: -4.5vw;
-            top: 100%;  
+            left: -5vw;
+            top: 57vh;
+            cursor: pointer;
         }
         .slick-next {
             position: absolute;
-            top: 100%;
+            top: 57vh;
             left: -2vw;
+            cursor: pointer;
         }
         .slick-prev.slick-disabled,
         .slick-next.slick-disabled {
             opacity: 0.3;
+            cursor: default;
         }
         .slick-list {
             width: 100vw;
             .slick-slide {
-                margin-right: 43px;
+                margin-right: 2.844vw;
             }
         }
     }
@@ -589,10 +599,18 @@ article h2 {
     .paragraph--type--work .slick-slider .slick-prev {
         left: -6.5vw;
     }
+    .paragraph--type--work .slick-slider .slick-prev,
+    .paragraph--type--work .slick-slider .slick-next {
+        top: 45vh;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .paragraph--type--work .slick-slider .slick-prev {
         left: -5.5vw;
+    }
+    .paragraph--type--work .slick-slider .slick-prev,
+    .paragraph--type--work .slick-slider .slick-next {
+        top: 60vh;
     }
 }
 
@@ -610,7 +628,7 @@ article h2 {
     }
     .paragraph--type--testcards {
         background: #FFFFFF;
-        box-shadow: 0px 0px 0.4387rem 0.063rem rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0 0.4387rem 0.063rem rgba(0, 0, 0, 0.08);
         padding: 1.984vw;
         & img {
             position: relative;
@@ -636,7 +654,7 @@ article h2 {
 .agency-footer {
     padding: 3.307vw;
     background: $footer-background;
-    border-radius: 0px 10.450vw 0px 0px;
+    border-radius: 0 10.450vw 0 0;
     color: $footer-text-color;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -672,7 +690,7 @@ article h2 {
             width: 100%;
             padding: 0 1vh;
             background-color: transparent;
-            border: 1px solid $footer-text-color;
+            border: 0.063rem solid $footer-text-color;
             color: $footer-text-color;
             height: 6.1092063492063vh;
         }
@@ -694,7 +712,7 @@ article h2 {
             width: 9.458vw;
             height: 6.3492063492063vh;
             background: $footer-text-color;
-            border: 1px solid $footer-text-color;
+            border: 0.063rem solid $footer-text-color;
             text-transform: uppercase;
             font-family: $font-hind-vadodara;
             font-style: $font-normal;
