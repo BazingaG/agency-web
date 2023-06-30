@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
+    - field.field.node.page.field_image
     - field.field.node.page.field_sub_title
     - node.type.page
   module:
@@ -25,5 +26,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_image: true
   field_sub_title: true
   links: true

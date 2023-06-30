@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - node
     - paragraphs_type_permissions
     - search
     - system
@@ -25,6 +26,7 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view own unpublished content'
   - 'view paragraph content about'
   - 'view paragraph content banner'
   - 'view paragraph content services'

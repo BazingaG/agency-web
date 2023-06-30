@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_image
     - field.field.node.page.field_sub_title
     - node.type.page
+    - responsive_image.styles.wide
   module:
+    - svg_image_responsive
     - text
     - user
 _core:
@@ -22,6 +25,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: wide
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_sub_title:
     type: string
