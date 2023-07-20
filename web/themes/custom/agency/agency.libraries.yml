@@ -11,7 +11,7 @@ google-fonts:
     theme:
       https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;700&family=Playfair+Display:wght@400&display=swap: { type: external, minified: true }
 
-slick_slider_business:
+slick_slider:
   css:
     theme:
       https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}
@@ -19,16 +19,6 @@ slick_slider_business:
   js:
     https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true },
     js/slick-slider--business.js: {}
-  dependencies:
-    - core/jquery
-
-slick_slider_work:
-  css:
-    theme:
-      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css: {}
-  js:
-    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true },
     js/slick-slider--work.js: {}
   dependencies:
     - core/jquery
