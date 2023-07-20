@@ -39,7 +39,7 @@
  */
 #}
 
-{{ attach_library('agency/slick-slider') }}
+{{ attach_library('agency/slick_slider_business') }}
 
 {%
   set title_classes = [
@@ -49,7 +49,7 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass('slick-slider')  }}>
+    <div{{ attributes.addClass('slick-slider-business')  }}>
       {% for item in items %}
         <div{{ item.attributes }}>{{ item.content }}</div>
       {% endfor %}
@@ -61,7 +61,7 @@
   {% endif %}
 {% else %}
   <div{{ title_attributes }}>
-    <div class="slick-slider">
+    <div class="slick-slider-business">
       <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
       {% if multiple %}
         <div>

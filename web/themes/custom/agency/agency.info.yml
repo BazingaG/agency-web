@@ -15,4 +15,5 @@ regions:
 libraries:
   - agency/global_styling
   - agency/google-fonts
-  - agency/slick_slider
+  - agency/slick_slider_business
+  - agency/slick_slider_work
