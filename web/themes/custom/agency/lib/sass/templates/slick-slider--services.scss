@@ -1,0 +1,56 @@
+.paragraph--type--services .slick-slider {
+    .slick-prev {
+        position: absolute;
+        left: -7vw;
+        top: 21vh;
+        cursor: pointer;
+    }
+    .slick-next {
+        position: absolute;
+        left: -4vw;
+        top: 21vh;
+        cursor: pointer;
+    }
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+    .slick-list .slick-track {
+        display: flex;
+        gap: 2.712vw;
+        .slick-slide {
+            width: 24vw !important;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+    .paragraph--type--services .slick-slider .slick-list .slick-track {
+        gap: 15.712vw;
+    }
+    .paragraph--type--services .slick-slider .slick-prev {
+        left: -11vw;
+        top: 26vw;
+    }
+    .paragraph--type--services .slick-slider .slick-next {
+        top: 26vw;
+        left: -5vw;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .paragraph--type--services .slick-slider .slick-list .slick-track {
+        gap: 16.712vw;
+    }
+    .paragraph--type--services .slick-slider .slick-prev,
+    .paragraph--type--services .slick-slider .slick-next {
+        top: 15vw;
+    }
+    .paragraph--type--services .slick-slider .slick-prev {
+        left: -10vw;
+    }
+    .paragraph--type--services .slick-slider .slick-next {
+        left: -5vw;
+    }
+}

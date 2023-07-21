@@ -1,0 +1,16 @@
+@import '../base/typography';
+
+.agency-header div:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.agency-header-24 {
+    font-family: $playfair-display;
+    font-size: $font-size-24px;
+    line-height: $line-height-28px;
+    letter-spacing: $letter-spacing-01em;
+    color: $heading-text-color;
+}

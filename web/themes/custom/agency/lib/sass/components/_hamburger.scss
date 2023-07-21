@@ -1,0 +1,7 @@
+/*---HAMBURGER---*/
+$bar-width: 2rem;
+$bar-height: 0.3rem;
+$bar-gap: 0.2rem;
+$hamburger-margin: 8px;
+$hamburger-height: calc(#{$bar-height} * 3 + #{$bar-gap} * 2);
+$x-width: calc(#{$hamburger-height} * 1.41421356237);

@@ -1,0 +1,61 @@
+@import '../base/typography';
+@import '../base/fonts';
+
+.agency-header-36 {
+    font-family: $playfair-display;
+    font-size: $font-size-36px;
+    line-height: $line-height-42px;
+    letter-spacing: $letter-spacing-01em;
+    color: $footer-text-color;
+    padding-bottom: 1.8315018315018vh;
+}
+#block-webform {
+    > h2 {
+        font-family: $hind-vadodara;
+        font-style: $font-normal;
+        font-weight: $font-weight-600;
+        font-size: $font-size-16px;
+        line-height: 159.3%;
+        /* or 25px */
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+    .webform-flex--1 {
+        #edit-email {
+            width: 100%;
+            padding: 0 1vh;
+            background-color: transparent;
+            border: 0.063rem solid $footer-text-color;
+            color: $footer-text-color;
+            height: 6.1092063492063vh;
+        }
+        #edit-email:focus-visible {
+            outline: 0;
+        }
+        #edit-email::placeholder {
+            font-family: $hind-vadodara;
+            font-style: $font-normal;
+            font-weight: $font-weight-400;
+            font-size: $font-size-16px;
+            line-height: 159.3%;
+            /* or 25px */
+            letter-spacing: $letter-spacing-02em;
+            text-transform: uppercase;
+            color: $footer-text-color;
+        }
+        #edit-actions-01-submit {
+            width: 9.458vw;
+            height: 6.3492063492063vh;
+            background: $footer-text-color;
+            border: 0.063rem solid $footer-text-color;
+            text-transform: uppercase;
+            font-family: $hind-vadodara;
+            font-style: $font-normal;
+            font-weight: $font-weight-600;
+            font-size: $font-size-16px;
+            line-height: 159.3%;
+            /* or 25px */
+            letter-spacing: $letter-spacing-02em;
+        }
+    }
+}

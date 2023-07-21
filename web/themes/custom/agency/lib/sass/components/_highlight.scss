@@ -1,0 +1,30 @@
+.highlight {
+    background-image: url('../images/Vector11.svg');
+    background-repeat: no-repeat;
+    background-position-y: 6vh;
+    background-size: 100%;
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+    .highlight {
+        background-position-y: 5vh;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .highlight {
+        background-position-y: 6.5vh;
+    }
+}
+.highlight-bold {
+    background-position-y: 10vh;
+    background-size: 100%;
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+    .highlight-bold {
+        background-position-y: 8vh;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .highlight-bold {
+        background-position-y: 11vh;
+    }
+}

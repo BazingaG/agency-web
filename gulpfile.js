@@ -8,7 +8,7 @@ const del = require('del');
 var base_path = './web/themes/custom/agency';
 var paths = {
   css: {
-    src: base_path+'/lib/sass/*.scss',
+    src: base_path+'/lib/sass/**/*.scss',
     dest: base_path+'/css'
   },
   js: {
