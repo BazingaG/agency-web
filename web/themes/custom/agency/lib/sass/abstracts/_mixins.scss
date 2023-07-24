@@ -1,0 +1,12 @@
+@mixin for-md {
+    @media (min-width: 768px) { @content; }
+}
+@mixin for-lg {
+    @media (min-width: 992px) { @content; }
+}
+@mixin for-xl {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-xxl {
+    @media (min-width: 1400px) { @content; }
+}

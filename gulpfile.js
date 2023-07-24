@@ -65,6 +65,6 @@ function watch() {
 }
 
 exports.watch = watch;
-var build = gulp.parallel(clean, styles, scripts);
+var build = gulp.parallel(clean, styles);
 
 exports.default = build;

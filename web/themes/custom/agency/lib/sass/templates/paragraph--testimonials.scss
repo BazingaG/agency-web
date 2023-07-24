@@ -1,13 +1,19 @@
+@import '../abstracts/mixins';
+
 /*---TESTIMONIALS COMPONENT---*/
 .paragraph--type--testimonials {
     > div:first-child{
         text-align: center;
     }
     > div:nth-child(2) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
         padding: 3.6630036630037vh 13.228vw;
         gap: 5vw;
+        @include for-xl {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);       
+        }
     }
     .paragraph--type--testcards {
         background: #FFFFFF;
@@ -19,20 +25,15 @@
             padding-bottom: 2vw;
         }
         .hyphen img{
-            width: 0.6vw;
-            padding-bottom: 0.3vw;
+            width: 1.6vw;
+            padding-bottom: 0.8vw;
+            @include for-xl {
+                width: 0.5vw;
+                padding-bottom: 0.2vw;
+            }
         }
     }
 }
 .text-nowrap {
     text-wrap: nowrap;
-}
-
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    .paragraph--type--testimonials {
-        > div:nth-child(2) {
-            display: flex;
-            flex-direction: column;
-        }
-    }
 }

@@ -1,15 +1,35 @@
+@import '../abstracts/mixins';
+
 .paragraph--type--services .slick-slider {
     .slick-prev {
+        left: -15vw;
         position: absolute;
-        left: -7vw;
-        top: 21vh;
         cursor: pointer;
+        @include for-xl {
+            left: -7vw;
+            top: 21vh;
+        }
     }
     .slick-next {
         position: absolute;
-        left: -4vw;
-        top: 21vh;
         cursor: pointer;
+        left: -8vw;
+        @include for-xl {
+            left: -4vw;
+            top: 21vh;
+        }
+    }
+    .slick-prev, .slick-next {
+        top: 44vw;
+        @include for-xl {
+            top: 11.3vw;
+        }
+        svg {
+            font-size: 1.5em;
+            @include for-xl {
+                font-size: xx-large;
+            }
+        }
     }
     .slick-prev.slick-disabled,
     .slick-next.slick-disabled {
@@ -17,40 +37,16 @@
         cursor: default;
     }
     .slick-list .slick-track {
-        display: flex;
-        gap: 2.712vw;
-        .slick-slide {
-            width: 24vw !important;
-        }
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
-    .paragraph--type--services .slick-slider .slick-list .slick-track {
         gap: 15.712vw;
-    }
-    .paragraph--type--services .slick-slider .slick-prev {
-        left: -11vw;
-        top: 26vw;
-    }
-    .paragraph--type--services .slick-slider .slick-next {
-        top: 26vw;
-        left: -5vw;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
-    .paragraph--type--services .slick-slider .slick-list .slick-track {
-        gap: 16.712vw;
-    }
-    .paragraph--type--services .slick-slider .slick-prev,
-    .paragraph--type--services .slick-slider .slick-next {
-        top: 15vw;
-    }
-    .paragraph--type--services .slick-slider .slick-prev {
-        left: -10vw;
-    }
-    .paragraph--type--services .slick-slider .slick-next {
-        left: -5vw;
+        display: flex;
+        @include for-xl {
+            gap: 2.712vw;
+        }
+        .slick-slide {
+            width: 50vw;
+            @include for-xl {
+                width: 24vw !important;
+            }
+        }
     }
 }

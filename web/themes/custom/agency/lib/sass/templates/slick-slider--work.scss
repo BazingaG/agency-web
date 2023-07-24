@@ -1,15 +1,35 @@
+@import '../abstracts/mixins';
+
+
 .paragraph--type--work .slick-slider {
     .slick-prev {
         position: absolute;
-        left: -5vw;
-        top: 57vh;
         cursor: pointer;
+        left: -1.5vw;
+        @include for-xl {
+            left: -5vw;
+            top: 57vh;
+        }
     }
     .slick-next {
         position: absolute;
-        top: 57vh;
-        left: -2vw;
         cursor: pointer;
+        left: 6vw;
+        @include for-xl {
+            left: -2vw;
+        }
+    }
+    .slick-prev, .slick-next {
+        top: 55vh;
+        @include for-xl {
+            top: 58vh;
+        }
+        svg {
+            @include for-xl {
+                font-size: xx-large;
+            }
+            font-size: 1.5em;
+        }
     }
     .slick-prev.slick-disabled,
     .slick-next.slick-disabled {
@@ -21,24 +41,5 @@
         .slick-slide {
             margin-right: 2.844vw;
         }
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .paragraph--type--work .slick-slider .slick-prev {
-        left: -6.5vw;
-    }
-    .paragraph--type--work .slick-slider .slick-prev,
-    .paragraph--type--work .slick-slider .slick-next {
-        top: 45vh;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .paragraph--type--work .slick-slider .slick-prev {
-        left: -5.5vw;
-    }
-    .paragraph--type--work .slick-slider .slick-prev,
-    .paragraph--type--work .slick-slider .slick-next {
-        top: 60vh;
     }
 }
