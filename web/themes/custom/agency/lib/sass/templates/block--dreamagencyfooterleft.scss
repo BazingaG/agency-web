@@ -2,14 +2,6 @@
 @import '../base/fonts';
 @import '../abstracts/mixins';
 
-.agency-header-36 {
-    font-family: $playfair-display;
-    font-size: $font-size-36px;
-    line-height: $line-height-42px;
-    letter-spacing: $letter-spacing-01em;
-    color: $footer-text-color;
-    padding-bottom: 1.8315018315018vh;
-}
 #block-webform {
     > h2 {
         font-family: $hind-vadodara;

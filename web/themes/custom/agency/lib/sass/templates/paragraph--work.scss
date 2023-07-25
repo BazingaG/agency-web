@@ -4,21 +4,32 @@
 /*---WORK COMPONENT---*/
 .paragraph--type--work {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
     padding: 3.307vw;
     background: rgba(255, 222, 212, 0.3);
     border-radius: 0 26.455vw 0 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     margin-left: 10vw;
+    justify-content: center;
+    @include for-xl {
+        grid-template-columns: repeat(2, 1fr);
+    }
     > div:first-child,
     > div:nth-child(2) {
+        width: 100vw;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     > div:first-child {
-        width: 39vw;
+        @include for-xl {
+            width: 39vw;
+        }
     }
     > div:nth-child(2) {
-        width: 55vw;
+        order: -1;
+        justify-content: center;
+        @include for-xl {
+            width: 55vw;
+        }
     }
     > div:nth-child(3) {
         transform: matrix(-1, 0, 0, 1, 0, 0);

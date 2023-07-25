@@ -1,14 +1,18 @@
-@import 'typography';
+@import '../base/typography';
+@import '../abstracts/mixins';
 
 .font-hv-700-87,
 .font-hv-300-87 {
     font-family: $hind-vadodara;
     font-style: normal;
-    font-size: 5.438rem;
+    font-size: $font-size-43-5px;
     line-height: 99.8%;
     /* or 87px */
     letter-spacing: -0.01em;
     color: #331B3B;
+    @include for-xl {
+        font-size: $font-size-87px;
+    }
 }
 .font-hv-700-87 {
     font-weight: 700;
@@ -41,18 +45,32 @@
 .font-hv-300-48 {
     font-family: $hind-vadodara;
     font-style: normal;
-    font-size: 3rem;
+    font-size: $font-size-24px;
     line-height: 106.3%;
     /* or 51px */
     text-align: center;
     letter-spacing: -0.01em;
     color: #331B3B;
+    @include for-xl {
+        font-size: 3rem;
+    }
 }
 .font-hv-700-48 {
     font-weight: 700;
 }
 .font-hv-300-48 {
     font-weight: 300;
+}
+.agency-header-36 {
+    font-family: $playfair-display;
+    font-size: $font-size-18px;
+    line-height: $line-height-42px;
+    letter-spacing: $letter-spacing-01em;
+    color: $footer-text-color;
+    padding-bottom: 1.8315018315018vh;
+    @include for-xl {
+        font-size: $font-size-36px;
+    }
 }
 .font-hv-700-16 {
     font-family: $hind-vadodara;

@@ -6,17 +6,18 @@
     grid-row: 1/2;
     .views-row  {
         display: grid;
-        grid-template-columns: repeat(3, 2rem);
-        justify-content: right;
+        grid-auto-flow: column;
+        justify-content: end;
         gap: 0 1vw;
         @include for-xl {
-            gap: 0 1.9vw;
+            gap: 0 1.5vw;
         }
         .views-col {
-            width: 2.885vw;
-            padding: 1.529vw 1.595vw;
+            padding: 0.529vw 1vw;
+            width: 2.885vw !important;
             @include for-xl {
-                padding: 0.992vw 1.124vw;
+                width: 2.885vw !important;
+                padding: 1.363vw 0.239vw;
             }
             border: 2px solid $paragraph-text-color;
             transform: rotate(30.5deg);
@@ -24,18 +25,18 @@
             .fontawesome-icon {
                 text-align: center;
                 cursor: pointer;
-                transform: translate(0, 0rem);
+                transform: translate(0, -0.1rem);
+                @include for-xl {
+                    transform: translate(0, 0rem);
+                }
                 > svg {
                     transform: rotate(-30.5deg);
-                    font-size: 0.8em;
+                    font-size: 0.6em;
                     @include for-xl {
                         font-size: 1em;
                     }
                 }
             }
-        }
-        .views-col.col-2 .fontawesome-icons {
-            transform: translate(0, 0rem);
         }
     }
 }

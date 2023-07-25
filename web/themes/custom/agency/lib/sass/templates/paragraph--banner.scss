@@ -5,7 +5,7 @@
 .paragraph--type--banner {
     display: flex;
     flex-direction: column;
-    gap: 6.1050061050061vh;
+    gap: 3.1050061050061vh;
     padding: 0 3.307vw 6.1050061050061vh 3.307vw;
     @include for-xl {
         display: grid;
@@ -26,13 +26,8 @@
         }
     }
     > div:nth-child(3) {
-        background: #331B3B;
-        border-radius: 0.661vw;
-        width: fit-content;
-        padding:  2.6862026862027vh 3.241vw;
-        height: fit-content;
         & a {
-            font-family: $hind-vadodara;
+                font-family: $hind-vadodara;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 1.063rem;
@@ -53,7 +48,7 @@
                 text-transform: uppercase;
                 color: #FFFFFF;
                 text-decoration: none;
-                }
+            }
         }
         @include for-xl {
             grid-column: 1/2;
