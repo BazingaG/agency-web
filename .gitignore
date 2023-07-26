@@ -28,6 +28,8 @@ web/sites/example.sites.php
 # Ignore paths that contain user-generated content.
 web/sites/*/files
 web/sites/*/private
+web/themes/custom/agency/css
+web/themes/custom/agency/js
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
