@@ -1,0 +1,22 @@
+uuid: e65f6354-2de2-491e-b40c-40e4323cdc6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recent_work_cards
+id: node.recent_work_cards.promote
+field_name: promote
+entity_type: node
+bundle: recent_work_cards
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

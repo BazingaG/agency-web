@@ -1,0 +1,15 @@
+uuid: 00954ef6-060a-4ca2-ad4c-a71da42dc5d5
+langcode: en
+status: true
+dependencies: {  }
+name: work_vertical_thumbnail
+label: 'Work Vertical thumbnail'
+effects:
+  e92e322d-b440-4959-8e8a-9d8fc001d495:
+    uuid: e92e322d-b440-4959-8e8a-9d8fc001d495
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 89
+      height: 238
+      anchor: center-center

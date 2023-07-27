@@ -1,0 +1,15 @@
+uuid: ea7c6000-4874-4227-9df3-2e3ec3d01438
+langcode: en
+status: true
+dependencies: {  }
+name: work_large_thumbnail
+label: 'Work Large Thumbnail'
+effects:
+  0e344526-2213-473a-a221-8b4bbc879f8c:
+    uuid: 0e344526-2213-473a-a221-8b4bbc879f8c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 286
+      height: 238
+      anchor: center-center

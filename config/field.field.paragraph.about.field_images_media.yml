@@ -1,0 +1,31 @@
+uuid: 412b70ac-b708-4073-8c74-68534378da9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_images_media
+    - media.type.image
+    - media.type.svg_type
+    - paragraphs.paragraphs_type.about
+id: paragraph.about.field_images_media
+field_name: field_images_media
+entity_type: paragraph
+bundle: about
+label: Images
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_type: svg_type
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

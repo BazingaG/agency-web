@@ -1,0 +1,15 @@
+uuid: 4e3e16ee-af8f-48e5-bb7a-fcf6a1a361b7
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image
+label: 'Banner image'
+effects:
+  d71dda5b-5a39-42a6-bde2-a662f226960b:
+    uuid: d71dda5b-5a39-42a6-bde2-a662f226960b
+    id: image_scale
+    weight: 1
+    data:
+      width: 872
+      height: 618
+      upscale: false

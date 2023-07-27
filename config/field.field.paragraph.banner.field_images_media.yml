@@ -1,0 +1,31 @@
+uuid: 37bb99d3-b97a-49b2-ba59-4a5e4254a341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_images_media
+    - media.type.image
+    - media.type.svg_type
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.field_images_media
+field_name: field_images_media
+entity_type: paragraph
+bundle: banner
+label: Images
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_type: svg_type
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 7e3d0f52-be3c-4d2f-ab49-a866f33a95e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_recent_work_cards_ref
+    - node.type.recent_work_cards
+    - paragraphs.paragraphs_type.work
+id: paragraph.work.field_recent_work_cards_ref
+field_name: field_recent_work_cards_ref
+entity_type: paragraph
+bundle: work
+label: 'Recent Work Cards Ref'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      recent_work_cards: recent_work_cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

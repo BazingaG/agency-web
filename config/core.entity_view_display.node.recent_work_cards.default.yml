@@ -1,0 +1,49 @@
+uuid: 865efe0f-9c11-43a8-a13c-7c82d0686203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recent_work_cards.body
+    - field.field.node.recent_work_cards.field_desktop_image
+    - field.field.node.recent_work_cards.field_mobile_image
+    - field.field.node.recent_work_cards.field_sub_title
+    - node.type.recent_work_cards
+  module:
+    - user
+id: node.recent_work_cards.default
+targetEntityType: node
+bundle: recent_work_cards
+mode: default
+content:
+  field_desktop_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mobile_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sub_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true

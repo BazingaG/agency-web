@@ -1,0 +1,20 @@
+uuid: b33a91ab-f142-403b-9076-c0b948c3241d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_recent_work_cards_ref
+field_name: field_recent_work_cards_ref
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

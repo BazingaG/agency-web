@@ -1,0 +1,23 @@
+uuid: f1e9d327-c9e6-415e-8165-6684bb8a257e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recent_work_cards
+  module:
+    - text
+id: node.recent_work_cards.body
+field_name: body
+entity_type: node
+bundle: recent_work_cards
+label: 'Card Description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

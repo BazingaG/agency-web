@@ -1,0 +1,17 @@
+uuid: 46bf43bf-26e4-4288-b87b-2495097d260f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Recent Work Cards'
+type: recent_work_cards
+description: 'To be used in Main Page content type in Recent Work section'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,57 @@
+uuid: 64b79971-f223-4aa8-9873-0d0fdd8f3ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recent_work_cards.body
+    - field.field.node.recent_work_cards.field_desktop_image
+    - field.field.node.recent_work_cards.field_mobile_image
+    - field.field.node.recent_work_cards.field_sub_title
+    - image.style.work_vertical_thumbnail
+    - node.type.recent_work_cards
+  module:
+    - media
+    - user
+id: node.recent_work_cards.teaser
+targetEntityType: node
+bundle: recent_work_cards
+mode: teaser
+content:
+  field_desktop_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: work_large_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mobile_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: work_vertical_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sub_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true

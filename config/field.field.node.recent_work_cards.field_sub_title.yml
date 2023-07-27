@@ -1,0 +1,19 @@
+uuid: f553829a-c56a-4371-ae16-0cb04a6a8dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_title
+    - node.type.recent_work_cards
+id: node.recent_work_cards.field_sub_title
+field_name: field_sub_title
+entity_type: node
+bundle: recent_work_cards
+label: 'Card name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

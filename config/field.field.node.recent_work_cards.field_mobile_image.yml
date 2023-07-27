@@ -1,0 +1,31 @@
+uuid: d321b0d2-58f9-4b23-b2b0-d68c1d75cda3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mobile_image
+    - media.type.image
+    - media.type.svg_type
+    - node.type.recent_work_cards
+id: node.recent_work_cards.field_mobile_image
+field_name: field_mobile_image
+entity_type: node
+bundle: recent_work_cards
+label: 'Mobile Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_type: svg_type
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
