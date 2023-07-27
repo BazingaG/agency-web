@@ -1,34 +1,55 @@
 @import '../base/typography';
 @import '../abstracts/mixins';
+@import '../base/fonts';
+@import '../components/highlight';
 
 /*---WORK COMPONENT---*/
 .paragraph--type--work {
-    display: grid;
-    grid-auto-flow: row;
-    padding: 3.307vw;
     background: rgba(255, 222, 212, 0.3);
     border-radius: 0 26.455vw 0 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-left: 10vw;
+    margin-left: 11.508vw;
+}
+.paragraph--type--work .paragraph-work-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3.307vw 3.968vw 3.307vw;
     justify-content: center;
+    margin-left: 0px;
+    margin-right: -11.508vw;
+    padding-top: 3.307vw;
     @include for-xl {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     > div:first-child,
     > div:nth-child(2) {
-        width: 100vw;
+        width: 100%;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     > div:first-child {
+        @extend .font-hv-400-17;
         @include for-xl {
-            width: 39vw;
+            width: 35vw;
         }
     }
     > div:nth-child(2) {
         order: -1;
         justify-content: center;
+        @extend .font-hv-300-48;
         @include for-xl {
-            width: 55vw;
+            order: 0;
+            width: 60vw;
+        }
+        span:first-child {
+            @extend .font-hv-700-48;
+        }
+        span:nth-child(2) {
+            @extend .highlight;
+        }
+        span:first-child::after {
+            content: '\a';
+            white-space: pre;
         }
     }
     > div:nth-child(3) {
@@ -41,67 +62,7 @@
         column-gap: 2.844vw;
         margin-bottom: 4.1514041514042vh;
         @include for-xl {
-            margin-right: 13.5vw;
-        }
-    }
-    .paragraph--type--workcard {
-        display: grid;
-        grid-template-columns: none;
-        border-radius: 0.625rem;
-        background: #FFF;
-        box-shadow: 0 0 0.563rem 0.125rem rgba(0, 0, 0, 0.05);
-        padding: 0.625rem;
-        margin-top: 10.866910866911vh;
-        column-gap: 0.728vw;;
-        @include for-xl {
-            width: min-content;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        > div:first-child {
-            grid-row: 2/3;
-            grid-column: 1/2;
-            padding: 3.6630036630037vh 0 3.6630036630037vh 1.323vw;
-        }
-        > div:nth-child(2) {
-            grid-row: 1/2;
-            grid-column: 1/3;;
-            @include for-xl {
-                grid-row: 1/2;
-                grid-column: 1/2;
-                width: max-content;
-            }
-        }
-        > div:nth-child(3) {
-            grid-row: 1/2;
-            grid-column: 2/3;
-            display: none;
-            @include for-xl {
-                width: max-content;
-                display: block;
-            }
-        }
-        > div:nth-child(4) {
-            display: grid;
-            justify-content: right;
-            align-items: center;
-            grid-row: 2/3;
-            grid-column: 2/3;
-            @include for-xl {
-                grid-row: 2/3;
-                grid-column: 2/3;
-                justify-content: center;
-            }
-            > a {
-                color: #331B3B;
-                font-size: 0.875rem;
-                font-family: $hind-vadodara;
-                font-weight: 500;
-                line-height: 146.3%;
-                text-decoration: none;
-                border-radius: 6.25rem;
-                border: 0.063rem solid #343434;
-                padding: 0.24420024420024vh 0.794vw;
-            }
+            margin-right: 15.5vw;
         }
     }
 }

@@ -1,25 +1,34 @@
 @import '../base/typography';
 @import '../abstracts/mixins';
+@import '../base/fonts';
+@import '../components/highlight';
 
 /*---BANNER COMPONENT---*/
 .paragraph--type--banner {
     display: flex;
     flex-direction: column;
     gap: 3.1050061050061vh;
-    padding: 0 3.307vw 6.1050061050061vh 3.307vw;
+    padding-left: 3.307vw;
     @include for-xl {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 6.1050061050061vh 0 6.1050061050061vh 3.307vw;
         column-gap: 6.944vw;
     }
     > div:first-child {
+        @extend .font-hv-300-87;
         @include for-xl {
             grid-column: 1/2;
             grid-row: 1/2;
         }
+        span:first-child {
+            @extend .font-hv-700-87;
+        }
+        span:nth-child(2) {
+            @extend .highlight, .highlight-bold;
+        }
     }
     > div:nth-child(2) {
+        @extend .font-hv-400-17;
         @include for-xl {
             grid-column: 1/2;
             grid-row: 2/3;
@@ -27,29 +36,17 @@
     }
     > div:nth-child(3) {
         & a {
-                font-family: $hind-vadodara;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.063rem;
-                line-height: 137.3%;
-                /* or 23px */
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: none;
-                @include for-xl {
-                font-family: $hind-vadodara;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.063rem;
-                line-height: 137.3%;
-                /* or 23px */
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: none;
-            }
-        }
+            font-family: $hind-vadodara;
+            font-style: $font-normal;
+            font-weight: $font-weight-700;
+            font-size: 1.063rem;
+            line-height: 137.3%;
+            /* or 23px */
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $footer-text-color;
+            text-decoration: none;
+        }   
         @include for-xl {
             grid-column: 1/2;
             grid-row: 3/4;
@@ -57,6 +54,12 @@
     }
 }
 .paragraph--type--banner > div:nth-child(4) {
+    img {
+        height: fit-content;
+        @include for-xl {
+            width: 57.635vw;
+        }
+    }
     @include for-xl {
         grid-column: 2/3;
         grid-row: 1/4;

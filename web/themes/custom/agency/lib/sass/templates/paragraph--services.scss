@@ -1,19 +1,34 @@
 @import '../abstracts/mixins';
+@import '../base/fonts';
+@import '../base/typography';
+@import '../components/highlight';
 
 /*---SERVICES COMPONENT---*/
 .paragraph--type--services {
     display: grid;
     background: #ECF7FF;
     border-radius: 0 26.455vw 0 0;
-    padding: 5.233211233211vh 0;
+    padding: 12.233211233211vh 0;
     width: 90vw;
     @include for-xl {
-        padding: 11.233211233211vh 0;
+        // padding: 11.233211233211vh 0;
     }
     > div:first-child {
         text-align: center;
         padding-bottom: 6.1050061050061vh;
         width: 100vw;
+        @extend .font-hv-300-48;
+        span:first-child {
+            @extend .font-hv-700-48;
+        }
+        span:nth-child(2) {
+            @extend .highlight;
+        }
+        //line-break by SCSS
+        span:first-child::after {
+            content: "\a";
+            white-space: pre;
+        }
     }
     > div:nth-child(2) {
         margin-left: 20vw;
@@ -26,7 +41,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
-    background: #FFFFFF;
+    background: $footer-text-color;
     box-shadow: 0 0 0.595vw 0.132vw rgba(0, 0, 0, 0.05);
     border-radius: 0.661vw;
     padding: 3.323vw;
@@ -35,20 +50,30 @@
         padding: 1.323vw;
         width: 20.370vw;
     }
+    div:nth-child(2) {
+        @extend .font-hv-700-16;
+    }
+    div:nth-child(3) {
+        @extend .font-hv-300-15;
+    }
     & img[alt~="globe"],
     & img[alt~="code"],
-    & img[alt~="mobile"] {
+    & img[alt~="mobile"],
+    & img[alt~="rocket"] {
         border-radius: 0.661vw;
         padding: 0.438rem;
         left: 0;
     }
     & img[alt~="globe"] {
-        background: #FFDED4;
+        background: $very-light-pink;
     }
     & img[alt~="code"] {
-        background: #FFEED4;
+        background: $very-light-yellow;
     }
     & img[alt~="mobile"] {
-        background: #D4F0FF;
+        background: $very-light-blue;
+    }
+    & img[alt~="rocket"] {
+        background: $light-pink;
     }
 }

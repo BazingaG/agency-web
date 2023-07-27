@@ -1,0 +1,10 @@
+@import '../abstracts/mixins';
+
+.agency-content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15.307vw;
+    @include for-xl {
+        gap: 3.307vw;
+    }
+}

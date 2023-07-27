@@ -1,7 +1,7 @@
 @import '../abstracts/mixins';
 
 
-.paragraph--type--work .slick-slider {
+.paragraph--type--work .paragraph-work-grid > div:nth-child(3).slick-slider {
     .slick-prev {
         position: absolute;
         cursor: pointer;

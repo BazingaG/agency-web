@@ -4,26 +4,26 @@
 .font-hv-700-87,
 .font-hv-300-87 {
     font-family: $hind-vadodara;
-    font-style: normal;
+    font-style: $font-normal;
     font-size: $font-size-43-5px;
     line-height: 99.8%;
     /* or 87px */
     letter-spacing: -0.01em;
-    color: #331B3B;
+    color: $heading-text-color;
     @include for-xl {
         font-size: $font-size-87px;
     }
 }
 .font-hv-700-87 {
-    font-weight: 700;
+    font-weight: $font-weight-700;
 }
 .font-hv-300-87 {
-    font-weight: 300;
+    font-weight: $font-weight-300;
 }
 .font-hv-400-17 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 400;
+    font-style: $font-normal;
+    font-weight: $font-weight-400;
     font-size: 1.063rem;
     line-height: 146.3%;
     /* or 25px */
@@ -32,34 +32,33 @@
 }
 .font-hv-700-17 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 700;
+    font-style: $font-normal;
+    font-weight: $font-weight-700;
     font-size: 1.063rem;
     line-height: 137.3%;
     /* or 23px */
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $footer-text-color;
 }
 .font-hv-700-48,
 .font-hv-300-48 {
     font-family: $hind-vadodara;
-    font-style: normal;
+    font-style: $font-normal;
     font-size: $font-size-24px;
     line-height: 106.3%;
     /* or 51px */
-    text-align: center;
     letter-spacing: -0.01em;
-    color: #331B3B;
+    color: $heading-text-color;
     @include for-xl {
         font-size: 3rem;
     }
 }
 .font-hv-700-48 {
-    font-weight: 700;
+    font-weight: $font-weight-700;
 }
 .font-hv-300-48 {
-    font-weight: 300;
+    font-weight: $font-weight-300;
 }
 .agency-header-36 {
     font-family: $playfair-display;
@@ -74,39 +73,39 @@
 }
 .font-hv-700-16 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 700;
+    font-style: $font-normal;
+    font-weight: $font-weight-700;
     font-size: 1rem;
     line-height: 137.3%;
     /* identical to box height, or 22px */
     letter-spacing: 0.055em;
     text-transform: uppercase;
-    color: #331B3B;
+    color: $heading-text-color;
 }
 .font-hv-600-16 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 600;
+    font-style: $font-normal;
+    font-weight: $font-weight-600;
     font-size: 1rem;
     line-height: 159.3%;
     /* or 25px */
     letter-spacing: 0.02em;
-    color: #000000;
+    color: $footer-background;
 }
 .font-hv-400-16 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 400;
+    font-style: $font-normal;
+    font-weight: $font-weight-400;
     font-size: 1rem;
     line-height: 159.3%;
     /* or 25px */
     letter-spacing: 0.02em;
-    color: #331B3B;
+    color: $heading-text-color;
 }
 .font-hv-300-15 {
     font-family: $hind-vadodara;
-    font-style: normal;
-    font-weight: 300;
+    font-style: $font-normal;
+    font-weight: $font-weight-300;
     font-size: 0.938rem;
     line-height: 145.3%;
     /* or 22px */
@@ -121,9 +120,9 @@
     line-height: 146.3%;
 }
 .font-hv-500-14 {
-    color: #331B3B;
+    color: $heading-text-color;
     font-size: 0.875rem;
     font-family: $hind-vadodara;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     line-height: 146.3%;
 }

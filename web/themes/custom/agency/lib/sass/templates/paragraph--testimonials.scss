@@ -1,9 +1,22 @@
 @import '../abstracts/mixins';
+@import '../base/fonts';
+@import '../components/highlight';
 
 /*---TESTIMONIALS COMPONENT---*/
 .paragraph--type--testimonials {
     > div:first-child{
         text-align: center;
+        @extend .font-hv-300-48;
+        span:first-child {
+            @extend .font-hv-700-48;
+        }
+        span:nth-child(2) {
+            @extend .highlight;
+        }
+        span:first-child::after {
+            content: '\a';
+            white-space: pre;
+        }
     }
     > div:nth-child(2) {
         display: flex;
@@ -19,6 +32,12 @@
         background: #FFFFFF;
         box-shadow: 0 0 0.4387rem 0.063rem rgba(0, 0, 0, 0.08);
         padding: 1.984vw;
+        div:nth-child(2) {
+            @extend .font-hv-400-16;
+        }
+        div:nth-child(3) {
+            @extend .font-hv-600-16;
+        }
         & img {
             position: relative;
             width: 4.233vw;

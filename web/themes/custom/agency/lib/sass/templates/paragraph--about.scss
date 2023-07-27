@@ -1,13 +1,16 @@
 @import '../base/typography';
 @import '../abstracts/mixins';
+@import '../base/fonts';
 @import '../components/buttons';
+@import '../components/highlight';
+
 
 /*---ABOUT COMPONENT---*/
 .paragraph--type--about {
     display: flex;
     flex-direction: column;
     gap: 3.1050061050061vh;
-    padding: 6.1050061050061vh 3.307vw;
+    padding: 0 3.307vw;
     @include for-xl {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -27,20 +30,32 @@
             }
         }
         > div:first-child img {
-            width: 100vw;
+            height: fit-content;
             @include for-xl {
                 width: 47.950vw;
-                object-fit: cover;
             }
         }
     }
     > div:first-child {
+        text-align: left;
+        @extend .font-hv-300-48;
         @include for-xl {
             grid-column: 2/3;
             grid-row: 1/2;
         }
+        span:first-child {
+            @extend .font-hv-700-48;
+        }
+        span:nth-child(2) {
+            @extend .highlight;
+        }
+        span:first-child::after {
+            content: '\a';
+            white-space: pre;
+        }
     }
     > div:nth-child(2) {
+        @extend .font-hv-400-17;
         @include for-xl {
             grid-column: 2/3;
             grid-row: 2/3;
