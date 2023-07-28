@@ -7,4 +7,14 @@
     @include for-xl {
         gap: 3.307vw;
     }
+    > div:nth-child(2) {
+        background-image: none;
+        @include for-xl {
+            background-image: url("../images/Ellipse 13.svg");
+            background-repeat: no-repeat;
+            background-size: 532px;
+            background-position-x: right;
+            background-position-y: 4.8vw;
+        }
+    }
 }
