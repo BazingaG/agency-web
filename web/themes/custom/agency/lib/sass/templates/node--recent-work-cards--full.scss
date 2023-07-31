@@ -1,0 +1,40 @@
+@import '../abstracts/mixins';
+@import '../base/fonts';
+
+.node--workcards--full {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 3.307vw;
+    @include for-xl {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3.307vw 1fr;
+    }
+    div:first-child {
+        order: 0;
+        @include for-xl {
+            grid-row: 1;
+            grid-template-rows: 3.307vw 1fr;
+        }
+        @extend .font-hv-700-24;
+    }
+    div:nth-child(2) {
+        order: 2;
+        @include for-xl {
+            grid-row: 2;
+            order: 0;
+        }
+        p { @extend .font-hv-300-15; }
+    }
+    div:nth-child(3) {
+        order: 1;
+        justify-content: center;
+        align-items: center;
+        @include for-xl {
+            grid-row: 1 / span 2;
+            order: 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

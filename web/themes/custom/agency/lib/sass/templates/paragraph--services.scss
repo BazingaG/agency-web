@@ -54,6 +54,7 @@
         width: 20.370vw;
     }
     div:nth-child(2) {
+        text-transform: uppercase;
         @extend .font-hv-700-16;
     }
     div:nth-child(3) {

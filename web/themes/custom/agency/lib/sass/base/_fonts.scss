@@ -79,7 +79,6 @@
     line-height: 137.3%;
     /* identical to box height, or 22px */
     letter-spacing: 0.055em;
-    text-transform: uppercase;
     color: $heading-text-color;
 }
 .font-hv-600-16 {
@@ -116,12 +115,19 @@
     color: $heading-text-color;
     font-size: 1.5rem;
     font-family: $hind-vadodara;
-    font-weight: 700;
+    font-weight: $font-weight-700;
     line-height: 146.3%;
 }
 .font-hv-500-14 {
     color: $heading-text-color;
     font-size: 0.875rem;
+    font-family: $hind-vadodara;
+    font-weight: $font-weight-500;
+    line-height: 146.3%;
+}
+.font-hv-500-14 {
+    color: $heading-text-color;
+    font-size: $font-size-14px;
     font-family: $hind-vadodara;
     font-weight: $font-weight-500;
     line-height: 146.3%;

@@ -1,5 +1,6 @@
 @import '../abstracts/mixins';
 @import '../base/fonts';
+@import '../base/typography';
 
 .paragraph--type--work .node--workcard {
     display: grid;
@@ -9,8 +10,8 @@
     box-shadow: 0 0 0.563rem 0.125rem rgba(0, 0, 0, 0.05);
     padding: 1.587vw 0.595vw 0;
     margin-top: 5.886vw;
-    column-gap: 0.728vw;;
     @include for-xl {
+        column-gap: 0.728vw;
         width: min-content;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -34,25 +35,23 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 1.984vw 1.058vw 4.984vw 1.389vw;
-        color: $heading-text-color;
-        font-family: $hind-vadodara;
-        font-size: $font-size-24px;
-        font-style: $font-normal;
-        font-weight: $font-weight-700;
-        line-height: 146.3%;
+        > div:first-child {
+            font-style: $font-normal;
+            white-space: nowrap;
+            @extend .font-hv-700-16;
+            @include for-xl {
+                font-size: $font-size-24px !important;
+            }
+        }
         span {
             text-align: right;
         }
         span a {
-            color: $heading-text-color;
-            font-size: 0.875rem;
-            font-family: $hind-vadodara;
-            font-weight: 500;
-            line-height: 146.3%;
             text-decoration: none;
             border-radius: 6.25rem;
             border: 0.063rem solid #343434;
             padding: 0.132vw 0.794vw;
+            @extend .font-hv-500-14;
         }
         @include for-xl {
             padding: 1.984vw 1.058vw 1.984vw 1.389vw;
