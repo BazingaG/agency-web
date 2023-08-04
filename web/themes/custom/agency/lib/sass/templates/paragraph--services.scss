@@ -41,43 +41,44 @@
     }
 }
 .paragraph--type--servicescard {
-    // width: 100%;
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     background: $footer-text-color;
     box-shadow: 0 0 0.595vw 0.132vw rgba(0, 0, 0, 0.05);
     border-radius: 0.661vw;
     padding: 3.323vw;
-    // height: 20vh;
     @include for-xl {
         padding: 1.323vw;
         width: 20.370vw;
     }
     div:nth-child(2) {
+        display: flex;
+        align-items: center;
         text-transform: uppercase;
         @extend .font-hv-700-16;
     }
     div:nth-child(3) {
         @extend .font-hv-300-15;
     }
-    & img[alt~="globe"],
-    & img[alt~="code"],
-    & img[alt~="mobile"],
-    & img[alt~="rocket"] {
-        border-radius: 0.661vw;
-        padding: 0.438rem;
-        left: 0;
+    > div:has(img) {
+        width: 3.25rem;
+        height: 3rem;
+        border-radius: 0.625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    & img[alt~="globe"] {
+    > div:has(img[alt~="globe"]) {
         background: $very-light-pink;
     }
-    & img[alt~="code"] {
+    > div:has(img[alt~="code"]) {
         background: $very-light-yellow;
     }
-    & img[alt~="mobile"] {
+    > div:has(img[alt~="mobile"]) {
         background: $very-light-blue;
     }
-    & img[alt~="rocket"] {
+    > div:has(img[alt~="rocket"]) {
         background: $light-pink;
     }
 }

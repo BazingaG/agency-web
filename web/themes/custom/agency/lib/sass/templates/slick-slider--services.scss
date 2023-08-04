@@ -20,9 +20,9 @@
         }
     }
     .slick-prev, .slick-next {
-        top: 44vw;
+        top: 50vw;
         @include for-xl {
-            top: 11.3vw;
+            top: 13.3vw;
         }
         svg {
             font-size: 1.5em;
