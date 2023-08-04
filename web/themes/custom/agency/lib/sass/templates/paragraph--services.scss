@@ -41,14 +41,14 @@
     }
 }
 .paragraph--type--servicescard {
-    width: 100%;
+    // width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     background: $footer-text-color;
     box-shadow: 0 0 0.595vw 0.132vw rgba(0, 0, 0, 0.05);
     border-radius: 0.661vw;
     padding: 3.323vw;
-    height: 20vh;
+    // height: 20vh;
     @include for-xl {
         padding: 1.323vw;
         width: 20.370vw;
