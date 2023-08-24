@@ -5,21 +5,21 @@ sass.compiler = require('node-sass');
 var browserSync = require('browser-sync').create();
 const del = require('del');
 
-var base_path = './web/themes/custom/agency';
+var base_path = './';
 var paths = {
   css: {
-    src: base_path+'/lib/sass/**/*.scss',
-    dest: base_path+'/css'
+    src: base_path+'lib/sass/**/*.scss',
+    dest: base_path+'css'
   },
   js: {
-    src: base_path+'/lib/js/*.js',
-    dest: base_path+'/js'
+    src: base_path+'lib/js/*.js',
+    dest: base_path+'js'
   },
   html: {
-    src: base_path+'/templates/*.html.twig'
+    src: base_path+'templates/*.html.twig'
   },
   img: {
-    src: base_path+'/images/*{.svg,.png}'
+    src: base_path+'images/*{.svg,.png}'
   }
 }
 
