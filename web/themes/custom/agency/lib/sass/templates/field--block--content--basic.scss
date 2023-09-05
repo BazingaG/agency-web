@@ -1,10 +1,11 @@
 @import '../base/typography';
+@import '../abstracts/mixins';
 
 .agency-block-16 {
     font-family: $hind-vadodara;
     font-style: $font-normal;
     font-weight: 400;
-    font-size: 1rem;
+    @include px-to-rem(font-size, 16px);
     line-height: 159.3%;
     /* or 25px */
     letter-spacing: 0.02em;

@@ -7,7 +7,7 @@
         font-family: $hind-vadodara;
         font-style: $font-normal;
         font-weight: $font-weight-600;
-        font-size: $font-size-16px;
+        @include px-to-rem(font-size, 16px);
         line-height: 159.3%;
         /* or 25px */
         letter-spacing: 0.02em;
@@ -38,7 +38,7 @@
                 font-family: $hind-vadodara;
                 font-style: $font-normal;
                 font-weight: $font-weight-400;
-                font-size: $font-size-16px;
+                @include px-to-rem(font-size, 16px);
                 line-height: 159.3%;
                 /* or 25px */
                 letter-spacing: $letter-spacing-02em;
@@ -53,7 +53,7 @@
             font-family: $hind-vadodara;
             font-style: $font-normal;
             font-weight: $font-weight-600;
-            font-size: $font-size-16px;
+            @include px-to-rem(font-size, 16px);
             line-height: 159.3%;
             /* or 25px */
             letter-spacing: $letter-spacing-02em;

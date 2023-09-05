@@ -2,7 +2,7 @@
 @import '../abstracts/mixins';
 
 .agency-page {
-    padding-top: 5.4945054945055vh;
+    padding-top: 43px;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -10,7 +10,8 @@
     background-repeat: no-repeat;
     background-position-x: right;
     .agency-content {
-        padding-bottom: 6.085vw;
+        padding-bottom: 92px;
+        @extend .agency-wrapper;
     }
     .agency-content div[data-drupal-messages] {
         display: none;
@@ -21,9 +22,10 @@
 .agency-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 0 3.307vw 6.1050061050061vh 3.307vw;
+    padding: 0 50px 41.43px 50px;
     justify-content: center;
     align-items: center;
+    @extend .agency-wrapper;
     > div:first-child {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -41,16 +43,23 @@
     color: $footer-text-color;
     > div:first-child {
         padding-bottom: 3.307vw;
+        max-width: 700px;
     }
     @include for-xl {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        justify-content: center;
     }
     > div:nth-child(2) {
         @include for-xl {
             display: grid;
             justify-content: center;
             align-items: center;
+            max-width: 700px;
         }
     }
+}
+
+.agency-wrapper {
+    max-width: 1400px;
+    margin: auto;
 }

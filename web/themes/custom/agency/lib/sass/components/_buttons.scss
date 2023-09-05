@@ -1,6 +1,6 @@
 .paragraph--type--about>div div:nth-child(3),
 .paragraph--type--banner>div div:nth-child(3) {
-    background: #331B3B;
+    background: $heading-text-color;
     border-radius: 0.625rem;
     width: fit-content;
     padding: 2.6862026862027vh 3.241vw;

@@ -40,7 +40,7 @@
             white-space: nowrap;
             @extend .font-hv-700-16;
             @include for-xl {
-                font-size: $font-size-24px !important;
+                @include px-to-rem(font-size, 24px, true);
             }
         }
         span {

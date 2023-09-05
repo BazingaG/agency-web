@@ -10,3 +10,14 @@
 @mixin for-xxl {
     @media (min-width: 1400px) { @content; }
 }
+
+$base-font-size: 16px;
+
+@mixin px-to-rem($property, $px-value, $important: false) {
+    $rem-value: $px-value / $base-font-size * 1rem;
+    @if $important {
+        #{$property}: #{$rem-value} !important;
+    } @else {
+        #{$property}: #{$rem-value};
+    }
+}
