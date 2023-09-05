@@ -25,9 +25,9 @@
             .fontawesome-icon {
                 text-align: center;
                 cursor: pointer;
-                transform: translate(0, -0.1rem);
+                transform: translate(0, -1.6px);
                 @include for-xl {
-                    transform: translate(0, 0rem);
+                    transform: translate(0, 0px);
                 }
                 > svg {
                     transform: rotate(-30.5deg);

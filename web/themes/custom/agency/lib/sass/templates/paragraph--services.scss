@@ -62,9 +62,9 @@
         @extend .font-hv-300-15;
     }
     > div:has(img) {
-        width: 3.25rem;
-        height: 3rem;
-        border-radius: 0.625rem;
+        width: 52px;
+        height: 48px;
+        @include px-to-rem(border-radius, 10px);
         display: flex;
         justify-content: center;
         align-items: center;

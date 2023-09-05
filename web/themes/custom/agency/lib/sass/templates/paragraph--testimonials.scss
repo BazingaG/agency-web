@@ -1,6 +1,7 @@
 @import '../abstracts/mixins';
 @import '../base/fonts';
 @import '../components/highlight';
+@import '../base/typography';
 
 /*---TESTIMONIALS COMPONENT---*/
 .paragraph--type--testimonials {
@@ -30,7 +31,7 @@
     }
     .paragraph--type--testcards {
         background: #FFFFFF;
-        box-shadow: 0 0 0.4387rem 0.063rem rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0 7.019px 1.008px $paragraph-test-card-shadow;
         padding: 1.984vw;
         div:nth-child(2) {
             @extend .font-hv-400-16;

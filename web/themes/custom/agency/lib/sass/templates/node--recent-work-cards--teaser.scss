@@ -48,8 +48,8 @@
         }
         span a {
             text-decoration: none;
-            border-radius: 6.25rem;
-            border: 0.063rem solid #343434;
+            @include px-to-rem(border-radius, 100px);
+            border: 1.008px solid #343434;
             padding: 0.132vw 0.794vw;
             @extend .font-hv-500-14;
         }

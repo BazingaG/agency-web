@@ -20,7 +20,7 @@
         #edit-email {
             width: 94%;
             background-color: transparent;
-            border: 0.063rem solid $footer-text-color;
+            border: 1.008px solid $footer-text-color;
             color: $footer-text-color;
             padding: 4.1092063492063vw 1vh;
             @include for-xl {
@@ -48,7 +48,7 @@
         }
         #edit-actions-01-submit {
             background: $footer-text-color;
-            border: 0.063rem solid $footer-text-color;
+            border: 1.008px solid $footer-text-color;
             text-transform: uppercase;
             font-family: $hind-vadodara;
             font-style: $font-normal;
