@@ -22,3 +22,32 @@ slick_slider:
     js/slick-slider--work.js: {}
   dependencies:
     - core/jquery
+
+paragraph_banner:
+  css:
+    theme:
+      css/templates/paragraph--banner.css: {}
+
+paragraph_services:
+  css:
+    theme:
+      css/templates/paragraph--services.css: {}
+      css/templates/slick-slider--services.css: {}
+
+paragraph_about:
+  css:
+    theme:
+      css/templates/paragraph--about.css: {}
+
+paragraph_work:
+  css:
+    theme:
+      css/templates/paragraph--work.css: {}
+      css/templates/node--recent-work-cards--teaser.css: {}
+      css/templates/node--recent-work-cards--full.css: {}
+      css/templates/slick-slider--work.css: {}
+
+paragraph_testimonials:
+  css:
+    theme:
+      css/templates/paragraph--testimonials: {}

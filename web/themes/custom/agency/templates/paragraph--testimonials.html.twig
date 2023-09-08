@@ -39,7 +39,7 @@
  */
 #}
 
-{{ attach_library('agency/paragraph_about') }}
+{{ attach_library('agency/paragraph_testimonials') }}
 
 {%
   set classes = [
@@ -52,12 +52,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div>
-        {{ content.field_title }}
-        {{ content.field_summary }}
-        {{ content.field_button }}
-      </div>
-      {{ content.field_images_media }}
+      {{ content }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
