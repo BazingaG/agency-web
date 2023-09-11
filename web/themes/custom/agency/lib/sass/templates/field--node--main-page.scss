@@ -3,10 +3,7 @@
 .agency-content-grid {
     display: flex;
     flex-direction: column;
-    gap: 15.307vw;
-    @include for-xl {
-        gap: 3.307vw;
-    }
+    gap: 100px;
     > div:nth-child(2) {
         background-image: none;
         @include for-xl {
@@ -14,7 +11,7 @@
             background-repeat: no-repeat;
             background-size: 532px;
             background-position-x: right;
-            background-position-y: 4.8vw;
+            background-position-y: 57px;
         }
     }
 }

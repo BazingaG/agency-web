@@ -1,16 +1,16 @@
 .highlight {
-    background-image: url('../images/Vector11.svg');
+    background-image: url('../../images/Vector11.svg');
     background-repeat: no-repeat;
-    background-position-y: 3vh;
+    background-position-y: 25px;
     background-size: 100%;
     @include for-xl {
-        background-position-y: 6vh;
+        background-position-y: 48px;
     }
 }
 .highlight-bold {
-    background-position-y: 40px;
+    background-position-y: 43px;
     background-size: 100%;
     @include for-xl {
-        background-position-y: 10.5vh;
+        background-position-y: 86px;
     }
 }

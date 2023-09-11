@@ -8,10 +8,10 @@
     border-radius: 0.625rem;
     background: #FFF;
     box-shadow: 0 0 0.563rem 0.125rem rgba(0, 0, 0, 0.05);
-    padding: 1.587vw 0.595vw 0;
-    margin-top: 5.886vw;
+    padding: 24px 12px 35px 14px;
+    margin-top: 89px;
     @include for-xl {
-        column-gap: 0.728vw;
+        column-gap: 11px;
         width: min-content;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -34,7 +34,7 @@
         grid-column: 1 / span 2;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 1.984vw 1.058vw 4.984vw 1.389vw;
+        padding: 0;
         > div:first-child {
             font-style: $font-normal;
             white-space: nowrap;
@@ -44,17 +44,19 @@
             }
         }
         span {
-            text-align: right;
+            display: flex;
+            flex-direction: row-reverse;
         }
         span a {
             text-decoration: none;
             @include px-to-rem(border-radius, 100px);
             border: 1.008px solid #343434;
-            padding: 0.132vw 0.794vw;
+            padding: 5px 12px 5px 12px;
             @extend .font-hv-500-14;
         }
         @include for-xl {
-            padding: 1.984vw 1.058vw 1.984vw 1.389vw;
+            padding-top: 35px;
+            padding-left: 19px;
         }
     }
 }

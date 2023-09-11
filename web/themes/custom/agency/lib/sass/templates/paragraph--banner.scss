@@ -15,7 +15,7 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 82.6px;
     }
-    @include for-xxl {
+    @include for-max {
         padding: 0;
     }
     > div:first-child  {
@@ -30,10 +30,10 @@
     }
     > div:first-child > div:first-child {
         @extend .font-hv-300-87;
-        span:first-child {
+        > span:first-child {
             @extend .font-hv-700-87;
         }
-        span:nth-child(2) {
+        > span:nth-child(2) {
             @extend .highlight, .highlight-bold;
         }
     }

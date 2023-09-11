@@ -10,11 +10,12 @@
     transition: translate 200ms ease-in-out;
     translate: -200%;
     margin-top: calc(#{$hamburger-height} + #{$hamburger-margin});
-    width: 100vw;
     position: absolute;
     list-style-type: none;
-    padding: 0;
+    padding: 15px;
+    gap: 15px;
     margin: 0;
+    width: 300px;
     @include for-xl {
         display: grid;
         @include px-to-rem(grid-gap, 16px);
@@ -43,7 +44,7 @@
             letter-spacing: $letter-spacing-01em;
         }
         .nav-link.is-active {
-                border-bottom: 0.24420024420024vh solid;
+                border-bottom: 2px solid;
                 border-image: linear-gradient(to right, $highlight-color 50%, transparent 50%) 100% 1;
                 font-weight: $font-weight-600;
         }
@@ -60,7 +61,7 @@
     z-index: 2;
     cursor: pointer;
     position: absolute;
-    top: -2vw;
+    top: -10px;
     @include for-xl {
         display: none;
     }

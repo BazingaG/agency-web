@@ -10,40 +10,37 @@
         @include px-to-rem(font-size, 16px);
         line-height: 159.3%;
         /* or 25px */
-        letter-spacing: 0.02em;
+        letter-spacing: $letter-spacing-02em;
         text-transform: uppercase;
     }
     #edit-flexbox {
         display: inline-flex;
     }
     .webform-flex--1 {
+        flex-grow: 1;
+        flex: none;
         #edit-email {
-            width: 94%;
             background-color: transparent;
             border: 1.008px solid $footer-text-color;
             color: $footer-text-color;
-            padding: 4.1092063492063vw 1vh;
+            padding: 14px 0 14px 13px;
+            font-family: $hind-vadodara;
+            font-style: $font-normal;
+            font-weight: $font-weight-400;
+            @include px-to-rem(font-size, 16px);
+            line-height: 159.3%;
+            /* or 25px */
+            letter-spacing: $letter-spacing-02em;
+            text-transform: uppercase;
+            color: $footer-text-color;
             @include for-xl {
                 width: 100%;
-                padding: 1.109206vw 1vh;
+                padding: 14px 0 14px 13px;
             }
         }
         #edit-email:focus-visible {
             @include for-xl {
                 outline: 0;
-            }
-        }
-        #edit-email::placeholder {
-            @include for-xl {
-                font-family: $hind-vadodara;
-                font-style: $font-normal;
-                font-weight: $font-weight-400;
-                @include px-to-rem(font-size, 16px);
-                line-height: 159.3%;
-                /* or 25px */
-                letter-spacing: $letter-spacing-02em;
-                text-transform: uppercase;
-                color: $footer-text-color;
             }
         }
         #edit-actions-01-submit {
@@ -57,10 +54,9 @@
             line-height: 159.3%;
             /* or 25px */
             letter-spacing: $letter-spacing-02em;
-            padding: 1.3vh;
+            padding: 14px 52px;
             @include for-xl {
-                width: 9.458vw;
-                padding: 1.445vh;
+                padding: 14px 52px;
             }
         }
     }
