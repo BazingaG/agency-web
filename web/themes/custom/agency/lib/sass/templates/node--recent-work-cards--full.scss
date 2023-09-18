@@ -4,16 +4,16 @@
 .node--workcards--full {
     display: grid;
     grid-auto-flow: row;
-    padding: 3.307vw;
+    padding: 50px;
     @include for-xl {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 3.307vw 1fr;
+        grid-template-rows: 50px 1fr;
     }
     div:first-child {
         order: 0;
         @include for-xl {
             grid-row: 1;
-            grid-template-rows: 3.307vw 1fr;
+            grid-template-rows: 50px 1fr;
         }
         @extend .font-hv-700-24;
     }

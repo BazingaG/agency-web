@@ -6,21 +6,22 @@
 /*---WORK COMPONENT---*/
 .paragraph--type--work {
     background: rgba(255, 222, 212, 0.3);
-    border-radius: 0 26.455vw 0 0;
+    border-radius: 0 400px 0 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-left: 11.508vw;
+    margin-left: 174px;
 }
 .paragraph--type--work .paragraph-work-grid {
     display: flex;
     flex-direction: column;
-    padding: 0 3.307vw 3.968vw 3.307vw;
+    padding: 53px 0px 68px;
     justify-content: center;
     margin-left: 0px;
-    margin-right: -11.508vw;
-    padding-top: 3.307vw;
+    margin-right: -125px;
     @include for-xl {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 515px 1fr;
+        padding: 53px 94px 68px;
+        margin-right: -150px;
     }
     > div:first-child,
     > div:nth-child(2) {
@@ -29,9 +30,6 @@
     }
     > div:first-child {
         @extend .font-hv-400-17;
-        @include for-xl {
-            width: 35vw;
-        }
     }
     > div:nth-child(2) {
         order: -1;
@@ -39,7 +37,8 @@
         @extend .font-hv-300-48;
         @include for-xl {
             order: 0;
-            width: 60vw;
+            position: absolute;
+            right: -128px;
         }
         span:first-child {
             @extend .font-hv-700-48;
@@ -58,11 +57,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-row: 2/3;
         grid-column: 1/3;
-        margin-right: 10vw;
-        column-gap: 2.844vw;
-        margin-bottom: 4.1514041514042vh;
+        margin-right: 150px;
         @include for-xl {
-            margin-right: 15.5vw;
+            margin-right: 125px;
         }
     }
 }

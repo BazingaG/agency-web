@@ -8,16 +8,16 @@
         display: grid;
         grid-auto-flow: column;
         justify-content: end;
-        gap: 0 1vw;
+        gap: 0 10px;
         @include for-xl {
-            gap: 0 1.5vw;
+            gap: 0 15px;
         }
         .views-col {
-            padding: 0.529vw 1vw;
-            width: 2.885vw !important;
+            padding: 5px 11px;
+            width: 2px !important;
             @include for-xl {
-                width: 2.885vw !important;
-                padding: 1.363vw 0.239vw;
+                width: 43px !important;
+                padding: 18px 2px;
             }
             border: 2px solid $paragraph-text-color;
             transform: rotate(30.5deg);
@@ -25,7 +25,7 @@
             .fontawesome-icon {
                 text-align: center;
                 cursor: pointer;
-                transform: translate(0, -1.6px);
+                transform: translate(-0.9px, -1.5px);;
                 @include for-xl {
                     transform: translate(0, 0px);
                 }

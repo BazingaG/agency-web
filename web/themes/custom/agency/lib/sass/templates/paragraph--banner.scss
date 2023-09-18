@@ -9,11 +9,12 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-left: 50px;
+    padding: 0 50px;
     @include for-xl {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 82.6px;
+        padding: 0 0 0 50px;
     }
     @include for-max {
         padding: 0;

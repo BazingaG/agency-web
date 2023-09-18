@@ -50,4 +50,4 @@ paragraph_work:
 paragraph_testimonials:
   css:
     theme:
-      css/templates/paragraph--testimonials: {}
+      css/templates/paragraph--testimonials.css: {}

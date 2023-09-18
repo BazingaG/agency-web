@@ -9,12 +9,12 @@
 .paragraph--type--about {
     display: flex;
     flex-direction: column;
-    gap: 3.1050061050061vh;
-    padding: 0 3.307vw;
+    row-gap: 50px;
+    padding: 0 50px;
     @include for-xl {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 6.944vw;
+        column-gap: 82.6px;
     }
     > div:first-child {
         grid-column: 2/3;
@@ -39,7 +39,7 @@
         > div:first-child img {
             height: fit-content;
             @include for-xl {
-                width: 47.950vw;
+                width: 660px;
             }
         }
     }
@@ -58,12 +58,12 @@
         }
     }
     div:first-child > div:nth-child(2) {
-        padding: 1.455vw 0 2.447vw 0;
+        padding: 22px 0 37px 0;
         p {
             margin: 0;
         }
         p:first-child {
-            padding-bottom: 0.595vw;
+            padding-bottom: 9px;
         }
         @extend .font-hv-400-17;
     }

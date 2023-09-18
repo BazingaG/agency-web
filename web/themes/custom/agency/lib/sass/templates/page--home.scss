@@ -39,12 +39,11 @@
     flex-direction: column;
     background: $footer-background;
     padding: 66px 152px 76px 50px;
-    border-radius: 0 10.450vw 0 0;
+    border-radius: 0 158px 0 0;
     color: $footer-text-color;
     column-gap: 274px;
     row-gap: 50px;
     > div:first-child {
-        padding-bottom: 3.307vw;
         max-width: 700px;
     }
     @include for-xl {
