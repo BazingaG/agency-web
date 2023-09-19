@@ -24,11 +24,12 @@
         justify-content: center;
     }
     > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
         @include for-xl {
             grid-column: 1/2;
             grid-row: 1/4;
             display: grid;
-            justify-content: center;
             align-items: center;
         }
         > div {
