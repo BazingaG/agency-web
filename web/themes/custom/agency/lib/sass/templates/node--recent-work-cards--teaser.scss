@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: none;
     border-radius: 0.625rem;
-    background: #FFF;
+    background: $footer-text-color;
     box-shadow: 0 0 0.563rem 0.125rem rgba(0, 0, 0, 0.05);
     padding: 24px 12px 35px 14px;
     margin-top: 89px;
@@ -50,7 +50,7 @@
         span a {
             text-decoration: none;
             @include px-to-rem(border-radius, 100px);
-            border: 1.008px solid #343434;
+            border: 1.008px solid $dark-border;
             padding: 5px 12px 5px 12px;
             @extend .font-hv-500-14;
         }

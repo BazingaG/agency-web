@@ -48,7 +48,7 @@
     > div:first-child > div:nth-child(3) {
         & a {
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: $footer-text-color;
             text-decoration: none;
             @extend .font-hv-700-17;
         }   

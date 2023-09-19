@@ -30,7 +30,7 @@
         }
     }
     .paragraph--type--testcards {
-        background: #FFFFFF;
+        background: $footer-text-color;
         box-shadow: 0 0 7.019px 1.008px $paragraph-test-card-shadow;
         padding: 24px 19px 39px 19px;
         div:nth-child(2) {

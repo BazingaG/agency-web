@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EEE;
+    background-color: $nav-background;
     transition: translate 200ms ease-in-out;
     translate: -200%;
     margin-top: calc(#{$hamburger-height} + #{$hamburger-margin});
@@ -72,7 +72,7 @@
     content: "";
     width: $bar-width;
     height: $bar-height;
-    background-color: #333;
+    background-color: $hamburger-color;
     @include px-to-rem(border-radius, 16px);
     transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, transition 200ms ease-in-out;
     transform-origin: left center;
